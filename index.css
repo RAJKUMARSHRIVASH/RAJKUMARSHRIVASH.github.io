@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=M+PLUS+Rounded+1c&family=Noto+Sans&family=Rajdhani:wght@300&family=Sora:wght@200&family=Source+Code+Pro:wght@200&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bodyColor: rgb(220, 249, 253);
+    --firstColor: black;
+    --nameColor:rgb(4, 95, 65);
+    --liColor:rgb(3, 77, 53);
+    --borderBottomColor:rgb(3, 77, 53);
+}
+
+.dark-mode {
+    --bodyColor: black;
+    --firstColor: aliceblue;
+    --nameColor:rgb(9, 149, 165);
+    /* --liColor:rgb(41, 231, 171); */
+    --liColor:rgb(29, 181, 198);
+    --borderBottomColor:yellow;
+
+
+
+}
+
+body {
+    background-color: var(--bodyColor);
+    color: var(--firstColor);
+    /* font-family: 'Noto Sans', sans-serif; */
+    /* font-family: 'Abel', sans-serif; */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    /* font-family: 'Sora', sans-serif; */
+    margin: auto;
+}
+
+#nav-menu {
+    /* border: 1px solid; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20vw;
+    padding: 10px 20px;
+    background-color: var(--bodyColor);
+    width: 100%;
+    position: fixed;
+}
+
+#nav-menu-logo_name{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+#user-detail-name{
+    color: var(--nameColor);
+}
+
+#nav-menu-box {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid; */
+    /* margin: auto; */
+    width: 60%;
+}
+#nav-menu-box ul{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid; */
+    margin: auto;
+    gap: 30px;
+    font-weight: bold;
+    font-size: large;
+}
+#nav-menu-box li {
+    list-style: none;
+    color: var(--liColor);
+    padding: 0 20px;
+}
+#nav-menu-box li:hover {
+    border-bottom: 2px solid;
+    border-color: var(--borderBottomColor);
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+#light-dark-icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+
+.mid-body {
+    padding-top: 15vh;
+}
