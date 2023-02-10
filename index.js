@@ -57,3 +57,6 @@ function myFunction(x) {
       document.documentElement.scrollTop = 0;  // For Chrome, Firefox, IE and Opera
       //  ( documentElement  or  scrollingElement )
   }
+
+  // ******************************************************************************************
+
