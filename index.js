@@ -11,7 +11,7 @@ icon.onclick = function(){
         logo.src = "./logoAndImgaes/portlightLogo.png";
     }
     else {
-        icon.src = "./logoAndImgaes/moon.png";
+        icon.src = "./logoAndImgaes/dark-mode.png";
         logo.src = "./logoAndImgaes/Portfolio_logo.png";
 
     }
@@ -60,3 +60,15 @@ function myFunction(x) {
 
   // ******************************************************************************************
 
+//*********************************side nav bar active inactive************************************************ */
+
+let sidebarActive = document.querySelector("#sidebar-nav-menu-box ul li");
+
+sidebarActive.onclick = ()=>{
+    if(!sidebarActive.classList.contains("active")){
+        sidebarActive.classList.add("active");
+    }
+    else{
+        sidebarActive.classList.remove("active")
+    }
+}
