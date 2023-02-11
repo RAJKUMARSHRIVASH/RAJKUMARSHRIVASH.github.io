@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=M+PLUS+Rounded+1c&family=Noto+Sans&family=Rajdhani:wght@300&family=Sora:wght@200&family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 
 * {
@@ -21,6 +22,8 @@ html {
     --sidebarbgcolor: rgba(120, 243, 243, 0.666);
     --sidebarHoverbg: rgb(203, 239, 239);
     --midbodypara: rgb(4, 4, 72);
+    --midBodyName: rgb(255, 21, 0);
+    --profession: rgb(241, 32, 206);
 
 }
 
@@ -35,7 +38,8 @@ html {
     --sidebarbgcolor: #e0bfe0c5;
     --sidebarbgcolor: rgba(16, 26, 99, 0.822);
     --sidebarHoverbg: #6e236ec5;
-    --midbodypara: rgb(160, 160, 216);
+    --midbodypara: rgb(205, 205, 250);
+    --profession: rgb(32, 241, 137);
 
 }
 
@@ -96,7 +100,7 @@ body {
 
 @keyframes logo-anim {
 
-/* 0% start from and 100% end to */
+    /* 0% start from and 100% end to */
 
     100% {
         transform: rotate(360deg);
@@ -125,6 +129,7 @@ body {
     top: -2px;
     left: -10px;
 }
+
 #user-detail-name::after {
     content: '';
     position: absolute;
@@ -256,16 +261,17 @@ a {
     font-weight: bold;
     color: var(--liColor);
     padding: 8%;
-    border-bottom:2px solid rgba(220, 213, 213, 0.842);
+    border-bottom: 2px solid rgba(220, 213, 213, 0.842);
 
 }
+
 #sidebar-nav-menu-box ul .active {
     font-size: large;
     font-weight: bold;
     /* color: var(--liColor); */
     color: orange;
     padding: 8%;
-    border-bottom:2px solid rgba(220, 213, 213, 0.842);
+    border-bottom: 2px solid rgba(220, 213, 213, 0.842);
 
 }
 
@@ -274,11 +280,10 @@ a {
 
 }
 
-.mid-body {
-    margin: auto;
-    /* padding-top: 15vh; */
-    padding: 15vh 13vw;
-    color: var(--midbodypara);
+li img {
+    width: 18px;
+    margin-right: 5px;
+    margin-bottom: -2px;
 }
 
 .sidebar-icon {
@@ -311,6 +316,91 @@ a {
     transform: translate(0, -9px) rotate(45deg);
 }
 
+.section {
+    min-height: 100vh;
+    display: block;
+    /* position: fixed; */
+    z-index: 0;
+    /* z index is for make the things one beside of another  */
+    opacity: 1;
+    margin: auto;
+}
+
+.mid-body {
+    margin: auto;
+    padding: 15vh 13vw;
+    color: var(--midbodypara);
+    height: 100vh;
+    /* background-image: url("./logoAndImgaes/pexels-neo-2653362.jpg"); */
+    /* background-size: 100%; */
+    /* background-repeat: no-repeat; */
+    /* background-attachment: fixed; */
+    display: flex;
+
+}
+
+.midContainer {
+    max-width: 1100px;
+    width: 100%;
+    margin-left: 7%;
+}
+
+.row {
+    display: flex;
+    margin-right: -5px;
+}
+
+.mid-body .user-detail-intro {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+h3.user-detail-intro-firstLine {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+h3.user-detail-intro-firstLine span {
+    color: var(--midBodyName);
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+        0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+h3.profession {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+h3.profession span {
+    color: var(--profession);
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+        0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+#user-detail-intro p {
+    margin-bottom: 70px;
+    font-size: 20px;
+}
+
+.mid-body .avtar {
+    flex: 0 0 40%;
+    max-width: 0 0 40%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.mid-body .row .avtar img {
+    width: 200px;
+}
+
+
+
+
+
+
 
 /*----------------- Animation on back to button-----------  */
 #backToTop {
@@ -342,9 +432,3 @@ a {
 }
 
 /* --------------------------------------- */
-
-li img {
-    width: 18px;
-    margin-right: 5px;
-    margin-bottom: -2px;
-}
