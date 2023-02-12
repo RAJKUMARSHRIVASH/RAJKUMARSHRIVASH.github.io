@@ -66,8 +66,9 @@ body {
     --nav-link-load-time: 500ms;
 }
 
-#top-navbar {
+.top-navbar {
     position: relative;
+    z-index: 1;
 }
 
 #nav-menu {
@@ -397,6 +398,7 @@ h3.profession span {
         0px -4px 10px rgba(255, 255, 255, 0.3);
     white-space: nowrap;
     position: relative;
+    z-index: -1;
 }
 
 h3.profession span::before {
@@ -602,6 +604,9 @@ h3.profession span::before {
 .cntnr .hexagonArea {
     display: flex;
     /* border: 1px solid; */
+    z-index: 0;
+    /* position: relative; */
+
 
 }
 
@@ -627,7 +632,13 @@ h3.profession span::before {
     flex-direction: column;
     cursor: pointer;
     transition: 0.5s;
+    /* z-index: -1; */
 
+}
+
+.cntnr .hexagonArea .hexagon:hover{
+    background-color: aquamarine;
+    transform: scale(0.85);
 }
 .cntnr .hexagonArea.last{
     transform: translateY(-25px);
