@@ -20,23 +20,6 @@ html {
 }
 
 :root {
-    --bodyColor: rgb(220, 249, 253);
-    --firstColor: black;
-    --nameColor: rgb(4, 95, 65);
-    --liColor: rgb(3, 77, 53);
-    --borderBottomColor: rgb(3, 77, 53);
-    /* --sidebarbgcolor : rgb(204, 248, 218); */
-    /* --sidebarbgcolor : rgb(207, 239, 255); */
-    --sidebarbgcolor: rgba(120, 243, 243, 0.666);
-    --sidebarHoverbg: rgb(203, 239, 239);
-    --midbodypara: rgb(4, 4, 72);
-    --midBodyName: rgb(255, 21, 0);
-    --profession: rgb(241, 32, 206);
-    --resumeBtnHover: rgb(255, 62, 223);
-
-}
-
-.dark-mode {
     --bodyColor: rgb(7, 14, 47);
     --firstColor: aliceblue;
     /* --nameColor:rgb(9, 149, 165); */
@@ -50,7 +33,24 @@ html {
     --midbodypara: rgb(205, 205, 250);
     --profession: rgb(32, 241, 137);
     --resumeBtnHover: rgb(9, 215, 112);
+    --midBodyName: rgb(255, 21, 0);
 
+}
+
+.dark-mode {
+
+    --bodyColor: rgb(220, 249, 253);
+    --firstColor: black;
+    --nameColor: rgb(4, 95, 65);
+    --liColor: rgb(3, 77, 53);
+    --borderBottomColor: rgb(3, 77, 53);
+    /* --sidebarbgcolor : rgb(204, 248, 218); */
+    /* --sidebarbgcolor : rgb(207, 239, 255); */
+    --sidebarbgcolor: rgba(120, 243, 243, 0.666);
+    --sidebarHoverbg: rgb(203, 239, 239);
+    --midbodypara: rgb(4, 4, 72);
+    --profession: rgb(241, 32, 206);
+    --resumeBtnHover: rgb(255, 62, 223);
 
 }
 
@@ -331,11 +331,11 @@ li img {
 }
 
 .section {
-    min-height: 80vh;
+    min-height: 90vh;
     display: block;
     opacity: 1;
     margin: auto;
-    padding: 20vh 10vw;
+    padding: 5vh 10vw;
     /* outline: auto; */
 
 }
@@ -354,7 +354,7 @@ li img {
     width: 100%;
     margin-left: 6%;
     /* outline: auto; */
-    margin-top: 10vh;
+    margin-top: 25vh;
 }
 
 .row {
@@ -396,6 +396,34 @@ h3.profession span {
     text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
         0px -4px 10px rgba(255, 255, 255, 0.3);
     white-space: nowrap;
+    position: relative;
+}
+
+h3.profession span::before {
+    content: '';
+    border-left: 2px solid var(--profession);
+    left: 0;
+    top: 0;
+    height: 105%;
+    /* to complete cover the height of the font*/
+    width: 100%;
+    /* to complete cover the width of the font*/
+    position: absolute;
+    background-color: var(--bodyColor);
+    animation: animate 4s steps(12) infinite;
+
+}
+
+@keyframes animate {
+
+    30%,
+    60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
 }
 
 #user-detail-intro p {
@@ -447,7 +475,7 @@ h3.profession span {
 .btn-resume {
     font-size: 17px;
     font-weight: 500;
-    padding: 10px 15px;
+    padding: 8px 13px;
     background-color: var(--profession);
     color: var(--bodyColor);
     border: none;
@@ -519,38 +547,90 @@ h3.profession span {
 }
 
 
-.about .about-content .about-text h3{
-    font-size:24px;
+.about .about-content .about-text h3 {
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 15px;
     color: var(--profession);
 }
 
-.about .about-content .about-text p{
-    font-size:20px;
-    /* line-height: 30px;      */ /*  line height is for spacing between two lines  */
-    margin-bottom: 30px;
+.about .about-content .about-text p {
+    font-size: 20px;
+    /* line-height: 30px;      */
+    /*  line height is for spacing between two lines  */
+    /* margin-bottom: 30px; */
     color: var(--midbodypara);
 
 }
 
-.personal-info{
+.personal-info {
     margin-right: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
 }
 
-.personal-info h3{
-   color: orangered;
-   margin-bottom: 10px;
+.personal-info h3 {
+    color: orangered;
+    margin-bottom: 10px;
 }
-.personal-info p{
-    color:var(--profession);
+
+.personal-info p {
+    color: var(--profession);
     font-weight: 700;
     padding-bottom: 7px;
-    border-bottom: 2px solid rgb(235, 225, 225);
+    border-bottom: 2px solid rgba(220, 213, 213, 0.842);
 }
 
-.personal-info span{
-    color:var(--liColor);
+.personal-info span {
+    color: var(--liColor);
+}
+
+/*----------------- skills -----------  */
+
+/* hexagonal area */
+
+.cntnr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border: 1px solid; */
+}
+
+.cntnr .hexagonArea {
+    display: flex;
+    /* border: 1px solid; */
+
+}
+
+.cntnr .hexagonArea img {
+    width: 110px;
+    border-radius: 40px;
+}
+.cntnr .hexagonArea p {
+    color: var(--sidebarHoverbg);
+}
+
+.cntnr .hexagonArea .hexagon {
+    position: relative;
+    width: 130px;
+    height: 170px;
+    margin: 0 10px;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    /* background-color: var(--borderBottomColor); */
+    background-color: var(--midbodypara);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.cntnr .hexagonArea.last{
+    transform: translateY(-25px);
 }
 
 /*----------------- Animation on back to button-----------  */
