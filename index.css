@@ -529,13 +529,29 @@ h3.profession span {
 .about .about-content .about-text p{
     font-size:20px;
     /* line-height: 30px;      */ /*  line height is for spacing between two lines  */
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     color: var(--midbodypara);
 
 }
 
+.personal-info{
+    margin-right: 60px;
+}
 
+.personal-info h3{
+   color: orangered;
+   margin-bottom: 10px;
+}
+.personal-info p{
+    color:var(--profession);
+    font-weight: 700;
+    padding-bottom: 7px;
+    border-bottom: 2px solid rgb(235, 225, 225);
+}
 
+.personal-info span{
+    color:var(--liColor);
+}
 
 /*----------------- Animation on back to button-----------  */
 #backToTop {
