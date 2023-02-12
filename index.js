@@ -7,12 +7,12 @@ var logo = document.getElementById("logo");
 icon.onclick = function(){
     document.body.classList.toggle("dark-mode");
     if(document.body.classList.contains("dark-mode")){
-        icon.src = "./logoAndImgaes/lighmode.png";
-        logo.src = "./logoAndImgaes/portlightLogo.png";
-    }
-    else {
         icon.src = "./logoAndImgaes/dark-mode.png";
         logo.src = "./logoAndImgaes/Portfolio_logo.png";
+    }
+    else {
+        icon.src = "./logoAndImgaes/lighmode.png";
+        logo.src = "./logoAndImgaes/portlightLogo.png";
 
     }
 }
