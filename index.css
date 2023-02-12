@@ -11,6 +11,14 @@ html {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    background-color: rgb(223, 220, 220);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--liColor);
+}
+
 :root {
     --bodyColor: rgb(220, 249, 253);
     --firstColor: black;
@@ -24,6 +32,7 @@ html {
     --midbodypara: rgb(4, 4, 72);
     --midBodyName: rgb(255, 21, 0);
     --profession: rgb(241, 32, 206);
+    --resumeBtnHover: rgb(255, 62, 223);
 
 }
 
@@ -40,6 +49,8 @@ html {
     --sidebarHoverbg: #6e236ec5;
     --midbodypara: rgb(205, 205, 250);
     --profession: rgb(32, 241, 137);
+    --resumeBtnHover: rgb(9, 215, 112);
+
 
 }
 
@@ -88,6 +99,7 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+    width: 15%;
 }
 
 #logo {
@@ -116,6 +128,7 @@ body {
     animation: name-load var(--nav-load-time) ease-in-out var(--nav-load-time);
     animation-fill-mode: forwards;
     display: block;
+    white-space: nowrap;
 
 }
 
@@ -196,9 +209,10 @@ body {
 }
 
 #nav-menu-box li:hover {
-    border-bottom: 2px solid;
+    border-bottom: 4px solid;
     border-color: var(--borderBottomColor);
     cursor: pointer;
+
 }
 
 a {
@@ -317,42 +331,43 @@ li img {
 }
 
 .section {
-    min-height: 100vh;
+    min-height: 80vh;
     display: block;
-    /* position: fixed; */
-    z-index: 0;
-    /* z index is for make the things one beside of another  */
     opacity: 1;
     margin: auto;
+    padding: 20vh 10vw;
+    /* outline: auto; */
+
+}
+
+.hidden {
+    display: hidden !important;
 }
 
 .mid-body {
-    margin: auto;
-    padding: 15vh 13vw;
     color: var(--midbodypara);
-    height: 100vh;
-    /* background-image: url("./logoAndImgaes/pexels-neo-2653362.jpg"); */
-    /* background-size: 100%; */
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
-    display: flex;
 
 }
 
 .midContainer {
     max-width: 1100px;
     width: 100%;
-    margin-left: 7%;
+    margin-left: 6%;
+    /* outline: auto; */
+    margin-top: 10vh;
 }
 
 .row {
     display: flex;
-    margin-right: -5px;
+    /* flex-wrap: wrap; */
+    /* margin-right: -5px; */
+    align-items: flex-start;
+
 }
 
 .mid-body .user-detail-intro {
-    flex: 0 0 60%;
-    max-width: 60%;
+    flex: 0 0 70%;
+    max-width: 70%;
 }
 
 h3.user-detail-intro-firstLine {
@@ -367,6 +382,8 @@ h3.user-detail-intro-firstLine span {
     font-weight: 700;
     text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
         0px -4px 10px rgba(255, 255, 255, 0.3);
+    white-space: nowrap;
+
 }
 
 h3.profession {
@@ -378,26 +395,144 @@ h3.profession span {
     color: var(--profession);
     text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
         0px -4px 10px rgba(255, 255, 255, 0.3);
+    white-space: nowrap;
 }
 
 #user-detail-intro p {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     font-size: 20px;
 }
 
 .mid-body .avtar {
-    flex: 0 0 40%;
-    max-width: 0 0 40%;
+    flex: 0 0 30%;
+    max-width: 70%;
     text-align: center;
     margin-top: 2%;
+    margin-right: -2%;
+    position: relative;
+    z-index: -1;
 }
 
-.mid-body .row .avtar img {
+.avtar img {
     width: 200px;
+
+}
+
+.avtar::before {
+    content: '';
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    /* border-left: 8px solid orangered; */
+    border-left: 8px solid;
+    border-top: 8px solid;
+    color: var(--profession);
+    top: -30px;
+    left: 10px;
+}
+
+.avtar::after {
+    content: '';
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-right: 8px solid;
+    border-bottom: 8px solid;
+    color: var(--profession);
+    bottom: -30px;
+    right: 10px;
 }
 
 
+.btn-resume {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 15px;
+    background-color: var(--profession);
+    color: var(--bodyColor);
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    white-space: nowrap;
+    /* white-space: nowrap; basically make fix the any thing written with space (like name) and dont allow it to be wrapped while screen resizing */
+    transition: all 0.2s ease;
+}
 
+
+.btn-resume:hover {
+    transform: scale(1.03);
+    background-color: var(--resumeBtnHover);
+}
+
+/*----------------- About section-----------  */
+
+.section-title {
+    margin-right: 10%;
+    white-space: nowrap;
+    margin-top: 10vh;
+
+}
+
+.section-title h2 {
+    font-size: 35px;
+    color: var(--nameColor);
+    position: relative;
+    z-index: -1;
+    margin-bottom: 50px;
+}
+
+.section-title h2::before {
+    content: '';
+    width: 60px;
+    color: var(--profession);
+    position: absolute;
+    border-bottom: 4px solid;
+    bottom: -2px;
+    left: 0;
+}
+
+.section-title h2::after {
+    content: '';
+    width: 30px;
+    color: var(--profession);
+    position: absolute;
+    border-bottom: 4px solid;
+    bottom: -12px;
+    left: 0;
+}
+
+.about .about-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text {
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+.about .about-content img {
+    flex: 0 0 30%;
+    max-width: 330px;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+
+
+.about .about-content .about-text h3{
+    font-size:24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--profession);
+}
+
+.about .about-content .about-text p{
+    font-size:20px;
+    /* line-height: 30px;      */ /*  line height is for spacing between two lines  */
+    margin-bottom: 15px;
+    color: var(--midbodypara);
+
+}
 
 
 
