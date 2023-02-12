@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=M+PLUS+Rounded+1c&family=Noto+Sans&family=Rajdhani:wght@300&family=Sora:wght@200&family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 
 * {
@@ -8,6 +9,14 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    background-color: rgb(223, 220, 220);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--liColor);
 }
 
 :root {
@@ -21,6 +30,9 @@ html {
     --sidebarbgcolor: rgba(120, 243, 243, 0.666);
     --sidebarHoverbg: rgb(203, 239, 239);
     --midbodypara: rgb(4, 4, 72);
+    --midBodyName: rgb(255, 21, 0);
+    --profession: rgb(241, 32, 206);
+    --resumeBtnHover: rgb(255, 62, 223);
 
 }
 
@@ -35,7 +47,10 @@ html {
     --sidebarbgcolor: #e0bfe0c5;
     --sidebarbgcolor: rgba(16, 26, 99, 0.822);
     --sidebarHoverbg: #6e236ec5;
-    --midbodypara: rgb(160, 160, 216);
+    --midbodypara: rgb(205, 205, 250);
+    --profession: rgb(32, 241, 137);
+    --resumeBtnHover: rgb(9, 215, 112);
+
 
 }
 
@@ -84,6 +99,7 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+    width: 15%;
 }
 
 #logo {
@@ -96,7 +112,7 @@ body {
 
 @keyframes logo-anim {
 
-/* 0% start from and 100% end to */
+    /* 0% start from and 100% end to */
 
     100% {
         transform: rotate(360deg);
@@ -112,6 +128,7 @@ body {
     animation: name-load var(--nav-load-time) ease-in-out var(--nav-load-time);
     animation-fill-mode: forwards;
     display: block;
+    white-space: nowrap;
 
 }
 
@@ -125,6 +142,7 @@ body {
     top: -2px;
     left: -10px;
 }
+
 #user-detail-name::after {
     content: '';
     position: absolute;
@@ -191,9 +209,10 @@ body {
 }
 
 #nav-menu-box li:hover {
-    border-bottom: 2px solid;
+    border-bottom: 4px solid;
     border-color: var(--borderBottomColor);
     cursor: pointer;
+
 }
 
 a {
@@ -256,16 +275,17 @@ a {
     font-weight: bold;
     color: var(--liColor);
     padding: 8%;
-    border-bottom:2px solid rgba(220, 213, 213, 0.842);
+    border-bottom: 2px solid rgba(220, 213, 213, 0.842);
 
 }
+
 #sidebar-nav-menu-box ul .active {
     font-size: large;
     font-weight: bold;
     /* color: var(--liColor); */
     color: orange;
     padding: 8%;
-    border-bottom:2px solid rgba(220, 213, 213, 0.842);
+    border-bottom: 2px solid rgba(220, 213, 213, 0.842);
 
 }
 
@@ -274,11 +294,10 @@ a {
 
 }
 
-.mid-body {
-    margin: auto;
-    /* padding-top: 15vh; */
-    padding: 15vh 13vw;
-    color: var(--midbodypara);
+li img {
+    width: 18px;
+    margin-right: 5px;
+    margin-bottom: -2px;
 }
 
 .sidebar-icon {
@@ -311,6 +330,228 @@ a {
     transform: translate(0, -9px) rotate(45deg);
 }
 
+.section {
+    min-height: 80vh;
+    display: block;
+    opacity: 1;
+    margin: auto;
+    padding: 20vh 10vw;
+    /* outline: auto; */
+
+}
+
+.hidden {
+    display: hidden !important;
+}
+
+.mid-body {
+    color: var(--midbodypara);
+
+}
+
+.midContainer {
+    max-width: 1100px;
+    width: 100%;
+    margin-left: 6%;
+    /* outline: auto; */
+    margin-top: 10vh;
+}
+
+.row {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* margin-right: -5px; */
+    align-items: flex-start;
+
+}
+
+.mid-body .user-detail-intro {
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+h3.user-detail-intro-firstLine {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+h3.user-detail-intro-firstLine span {
+    color: var(--midBodyName);
+    font-family: 'Kaushan Script', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+        0px -4px 10px rgba(255, 255, 255, 0.3);
+    white-space: nowrap;
+
+}
+
+h3.profession {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+h3.profession span {
+    color: var(--profession);
+    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+        0px -4px 10px rgba(255, 255, 255, 0.3);
+    white-space: nowrap;
+}
+
+#user-detail-intro p {
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.mid-body .avtar {
+    flex: 0 0 30%;
+    max-width: 70%;
+    text-align: center;
+    margin-top: 2%;
+    margin-right: -2%;
+    position: relative;
+    z-index: -1;
+}
+
+.avtar img {
+    width: 200px;
+
+}
+
+.avtar::before {
+    content: '';
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    /* border-left: 8px solid orangered; */
+    border-left: 8px solid;
+    border-top: 8px solid;
+    color: var(--profession);
+    top: -30px;
+    left: 10px;
+}
+
+.avtar::after {
+    content: '';
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-right: 8px solid;
+    border-bottom: 8px solid;
+    color: var(--profession);
+    bottom: -30px;
+    right: 10px;
+}
+
+
+.btn-resume {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 15px;
+    background-color: var(--profession);
+    color: var(--bodyColor);
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    white-space: nowrap;
+    /* white-space: nowrap; basically make fix the any thing written with space (like name) and dont allow it to be wrapped while screen resizing */
+    transition: all 0.2s ease;
+}
+
+
+.btn-resume:hover {
+    transform: scale(1.03);
+    background-color: var(--resumeBtnHover);
+}
+
+/*----------------- About section-----------  */
+
+.section-title {
+    margin-right: 10%;
+    white-space: nowrap;
+    margin-top: 10vh;
+
+}
+
+.section-title h2 {
+    font-size: 35px;
+    color: var(--nameColor);
+    position: relative;
+    z-index: -1;
+    margin-bottom: 50px;
+}
+
+.section-title h2::before {
+    content: '';
+    width: 60px;
+    color: var(--profession);
+    position: absolute;
+    border-bottom: 4px solid;
+    bottom: -2px;
+    left: 0;
+}
+
+.section-title h2::after {
+    content: '';
+    width: 30px;
+    color: var(--profession);
+    position: absolute;
+    border-bottom: 4px solid;
+    bottom: -12px;
+    left: 0;
+}
+
+.about .about-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text {
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+.about .about-content img {
+    flex: 0 0 30%;
+    max-width: 330px;
+    margin-left: 5%;
+    border-radius: 5px;
+}
+
+
+.about .about-content .about-text h3{
+    font-size:24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--profession);
+}
+
+.about .about-content .about-text p{
+    font-size:20px;
+    /* line-height: 30px;      */ /*  line height is for spacing between two lines  */
+    margin-bottom: 30px;
+    color: var(--midbodypara);
+
+}
+
+.personal-info{
+    margin-right: 60px;
+}
+
+.personal-info h3{
+   color: orangered;
+   margin-bottom: 10px;
+}
+.personal-info p{
+    color:var(--profession);
+    font-weight: 700;
+    padding-bottom: 7px;
+    border-bottom: 2px solid rgb(235, 225, 225);
+}
+
+.personal-info span{
+    color:var(--liColor);
+}
 
 /*----------------- Animation on back to button-----------  */
 #backToTop {
@@ -342,9 +583,3 @@ a {
 }
 
 /* --------------------------------------- */
-
-li img {
-    width: 18px;
-    margin-right: 5px;
-    margin-bottom: -2px;
-}
