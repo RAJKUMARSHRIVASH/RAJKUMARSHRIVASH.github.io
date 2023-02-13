@@ -662,15 +662,15 @@ h3.profession span::before {
 .skill-percentage .skill-graph .skill-item {
     margin-bottom: 1%;
     /* position: relative; */
-
+    
 }
 .skill-percentage .skill-graph .skill-item h4{
     color: var(--nameColor);
-
+    
 }
 .skill-percentage .skill-graph .skill-item h4 span{
     color: var(--midbodypara);
-
+    
 }
 
 .skill-percentage .skill-graph .skill-item .parent{
@@ -689,6 +689,7 @@ h3.profession span::before {
 }
 
 .skill-percentage .skill-graph .skill-item .limit-bar {
+    /* transition:all 0.4s ease-in; */
     height: 5px;
     background-color:orangered;
     border-radius: 5px;
