@@ -599,6 +599,7 @@ h3.profession span::before {
     flex-direction: column;
     flex-wrap: wrap;
     /* border: 1px solid; */
+    margin-bottom: 20px;
 }
 
 .cntnr .hexagonArea {
@@ -614,6 +615,7 @@ h3.profession span::before {
     width: 110px;
     border-radius: 40px;
 }
+
 .cntnr .hexagonArea p {
     color: var(--sidebarHoverbg);
 }
@@ -636,13 +638,65 @@ h3.profession span::before {
 
 }
 
-.cntnr .hexagonArea .hexagon:hover{
+.cntnr .hexagonArea .hexagon:hover {
     background-color: aquamarine;
     transform: scale(0.85);
 }
-.cntnr .hexagonArea.last{
+
+.cntnr .hexagonArea.last {
     transform: translateY(-25px);
 }
+
+.skill-percentage {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    /* border: 1px solid; */
+}
+
+.skill-percentage .skill-graph {
+    width: 80%;
+}
+
+.skill-percentage .skill-graph .skill-item {
+    margin-bottom: 1%;
+    /* position: relative; */
+
+}
+.skill-percentage .skill-graph .skill-item h4{
+    color: var(--nameColor);
+
+}
+.skill-percentage .skill-graph .skill-item h4 span{
+    color: var(--midbodypara);
+
+}
+
+.skill-percentage .skill-graph .skill-item .parent{
+    width: 60%;
+    position: relative;
+}
+
+.skill-percentage .skill-graph .skill-item .bar {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(203, 201, 201);
+    border-radius: 5px;
+    position: absolute;
+    top: -15px;
+    left: 150px;
+}
+
+.skill-percentage .skill-graph .skill-item .limit-bar {
+    height: 5px;
+    background-color:orangered;
+    border-radius: 5px;
+    position: absolute;
+    top: -15px;
+    left: 150px;
+}
+
 
 /*----------------- Animation on back to button-----------  */
 #backToTop {
