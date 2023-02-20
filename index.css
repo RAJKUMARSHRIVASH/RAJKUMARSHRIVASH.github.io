@@ -666,16 +666,20 @@ h3.profession span::before {
 }
 .skill-percentage .skill-graph .skill-item h4{
     color: var(--nameColor);
+    position: relative;
     
 }
-.skill-percentage .skill-graph .skill-item h4 span{
+.skill-percentage .skill-graph .skill-item span{
     color: var(--midbodypara);
+    position: absolute;
+    right: 70px;
     
 }
 
 .skill-percentage .skill-graph .skill-item .parent{
     width: 60%;
     position: relative;
+    margin-left: -10%;
 }
 
 .skill-percentage .skill-graph .skill-item .bar {
