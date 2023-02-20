@@ -569,7 +569,9 @@ h3.profession span::before {
     margin-right: 60px;
     margin-top: 30px;
     margin-bottom: 30px;
-
+    /* outline: auto; */
+    width: 100%;
+    white-space: nowrap;
 }
 
 .personal-info h3 {
@@ -577,16 +579,29 @@ h3.profession span::before {
     margin-bottom: 10px;
 }
 
-.personal-info p {
+.personal-info .info-item p {
     color: var(--profession);
     font-weight: 700;
-    padding-bottom: 7px;
+    padding-bottom: 6px;
     border-bottom: 2px solid rgba(220, 213, 213, 0.842);
 }
 
 .personal-info span {
     color: var(--liColor);
 }
+
+.personal-info .info-item-education{
+    color: var(--profession);
+    font-weight: 700;
+    padding-bottom: 6px;
+    padding: 1%;
+}
+
+.education .duration {
+    font-size: small;
+    color: var(--midBodyName);
+}
+
 
 /*----------------- skills -----------  */
 
