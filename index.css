@@ -590,7 +590,7 @@ h3.profession span::before {
     color: var(--liColor);
 }
 
-.personal-info .info-item-education{
+.personal-info .info-item-education {
     color: var(--profession);
     font-weight: 700;
     padding-bottom: 6px;
@@ -677,22 +677,24 @@ h3.profession span::before {
 .skill-percentage .skill-graph .skill-item {
     margin-bottom: 1%;
     /* position: relative; */
-    
+
 }
-.skill-percentage .skill-graph .skill-item h4{
+
+.skill-percentage .skill-graph .skill-item h4 {
     color: var(--nameColor);
     position: relative;
-    
+
 }
-.skill-percentage .skill-graph .skill-item span{
+
+.skill-percentage .skill-graph .skill-item span {
     color: var(--midbodypara);
     position: absolute;
     /* right: 70px; */
     right: 11%;
-    
+
 }
 
-.skill-percentage .skill-graph .skill-item .parent{
+.skill-percentage .skill-graph .skill-item .parent {
     width: 60%;
     position: relative;
     margin-left: -10%;
@@ -711,7 +713,7 @@ h3.profession span::before {
 .skill-percentage .skill-graph .skill-item .limit-bar {
     /* transition:all 0.4s ease-in; */
     height: 5px;
-    background-color:orangered;
+    background-color: orangered;
     border-radius: 5px;
     position: absolute;
     top: -15px;
@@ -749,3 +751,14 @@ h3.profession span::before {
 }
 
 /* --------------------------------------- */
+
+@media screen and (max-width:550px) {
+    #nav-menu {
+        /* border: 1px solid; */
+    }
+
+    #nav-menu-box ul {
+        display: none;
+    }
+
+}
