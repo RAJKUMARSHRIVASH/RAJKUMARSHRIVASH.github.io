@@ -445,6 +445,7 @@ h3.profession span::before {
 
 .avtar img {
     width: 200px;
+    border-radius: 5px;
 
 }
 
@@ -749,6 +750,48 @@ h3.profession span::before {
     border: 2px dashed silver;
     border-radius: 50%;
 }
+
+table {
+    font-family: arial, sans-serif;
+    font-size: large;
+    border-collapse: collapse;
+    width: 100%;
+    margin-right: 100px;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    border-color: var(--firstColor);
+}
+
+tr:nth-child(1) {
+    background-color: var(--sidebarbgcolor);
+}
+/* tr:nth-child(even) {
+    background-color: var(--sidebarbgcolor);
+} */
+
+th {
+    color: var(--midBodyName);
+}
+
+td {
+    color: var(--liColor);
+}
+
+.jobrole-img {
+    width: 30%;
+}
+
+.jobrole-img img {
+    width: 80%;
+    border-radius: 5px;
+}
+
+
 
 /* --------------------------------------- */
 
