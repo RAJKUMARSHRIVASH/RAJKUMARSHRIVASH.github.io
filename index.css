@@ -659,8 +659,11 @@ h3.profession span::before {
     transform: scale(0.85);
 }
 
-.cntnr .hexagonArea.last {
+.cntnr .hexagonArea.middle {
     transform: translateY(-25px);
+}
+.cntnr .hexagonArea.last {
+    transform: translateY(-50px);
 }
 
 .skill-percentage {
