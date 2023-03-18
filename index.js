@@ -20,6 +20,7 @@ icon.onclick = function () {
 // *************************************************************************************************
 
 // *********************Sidebar icon menu opener************************************
+// Hamburger
 
 let sidebar = document.getElementById("sidebar");
 
@@ -56,9 +57,9 @@ const backToTop = () => {
     //  ( documentElement  or  scrollingElement )
 }
 
-// ******************************************************************************************
+// ***************************************************************************************************************
 
-//*********************************side nav bar active inactive************************************************ */
+//*********************************side nav bar active / inactive************************************************ */
 
 let sidebarActive = document.querySelector("#sidebar-nav-menu-box ul li");
 
@@ -69,4 +70,20 @@ sidebarActive.onclick = () => {
     else {
         sidebarActive.classList.remove("active")
     }
+}
+
+// ****************************************typing Animation***************************************************
+
+var typed = new Typed(".typing2", {
+    strings: ["Web Developer", "Confident Programmer","Problem Solver","Design Engineer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
+  });
+// ***************************************************************************************************************
+
+
+function downloadResume(){
+    window.open("https://drive.google.com/file/d/1h2bvMLgVDIAMnLiWZxMrdw_6wrBuLnhH/view?usp=drivesdk"); // drive link for preview
+    location.href = ("https://drive.google.com/uc?export=download&id=1h2bvMLgVDIAMnLiWZxMrdw_6wrBuLnhH"); // drive link fro download
 }

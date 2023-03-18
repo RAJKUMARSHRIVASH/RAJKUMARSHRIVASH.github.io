@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raj Kumar Sen Portfolio</title>
     <link rel="stylesheet" href="./index.css">
+    <!-- auto type animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </head>
 
 <body>
@@ -76,7 +78,8 @@
                         <img src="./logoAndImgaes/avtar6.png" alt="Avtar" class="home-img">
                     </div>
                 </div>
-                <button class="btn-resume" id="resume-button-2"><a href="#" id="resume-link-2">Download
+                <!--drive download link https://drive.google.com/uc?export=download&id=1h2bvMLgVDIAMnLiWZxMrdw_6wrBuLnhH -->
+                <button class="btn-resume" id="resume-button-2"><a target="_blank" id="resume-link-2" onclick="downloadResume()">Download
                         Resume</a></button>
             </div>
 
@@ -93,8 +96,7 @@
                     <div class="about-content">
                         <div class="row">
                             <div class="about-text">
-                                <h3>Web Developer</h3>
-                                <!-- Confident Programmer, Problem Solver, Design Engineer -->
+                                <h3 class="typing2"></h3>
                                 <p>
                                     A self-disciplined, self-motivated and enthusiastic web-
                                     Developer, always tries to give best with a positive attitude and optimal
@@ -162,9 +164,9 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn-resume" id="resume-button-2"><a href="#" id="resume-link-2">Download
+                        <button class="btn-resume" id="resume-button-2"><a target="_blank" onclick="downloadResume()" id="resume-link-2">Download
                                 CV</a></button>
-                        <button class="btn-resume" id="resume-button-2"><a href="#" id="resume-link-2">
+                        <button class="btn-resume send-mail" id="resume-button-2"><a href="mailto: rajkumarshrivash374@gmail.com" id="resume-link-2">
                                 Hire Me</a></button>
                     </div>
                 </div>
@@ -331,7 +333,6 @@
                             <div class="parent">
                                 <div class="bar"></div>
                                 <div class="limit-bar" style="width: 40%;"></div>
-
                             </div>
                         </div>
                     </div>
@@ -348,7 +349,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <table class="jobrole">
+                    <!-- <table class="jobrole">
                         <tr>
                             <th>Post</th>
                             <th>Job Role</th>
@@ -364,7 +365,27 @@
                             <td>Worked for 7th Economic Census 2019</td>
                             <td>Aug 2019 - Feb 2020</td>
                         </tr>
-                    </table>
+                    </table> -->
+                    <div class="jobrole-box">
+                        <div class="job">
+                            <div class="duration">
+                                <div class="circle-dot"></div>
+                                <img src="./logoAndImgaes/suitcase.png" alt=""><span>Oct 2020 - June 2022</span> 
+                            </div>
+                            <h2 class="job-title">Mechanical Design Engineer</h2>
+                            <h4 class="company-name">Company:- SSS Engineering Bhilai</h4>
+                            <p class="job-description">To Design, Drafting and Developing all the Rolling Mill Machine parts, structures, Plant layouts, Erection and all the Technical Industrial Drawings.</p>
+                        </div>
+                        <div class="job">
+                            <div class="duration">
+                                <div class="circle-dot"></div>
+                                <img src="./logoAndImgaes/suitcase.png" alt=""><span>Aug 2019 - Feb 2020</span>
+                            </div>
+                            <h2 class="job-title">CSC Enumerator / Supervisor</h2>
+                            <h4 class="company-name">Company:- CSC E-Governance services India ltd.</h4>
+                            <p class="job-description">Worked for 7th Economic Census 2019</p>
+                        </div>
+                    </div>
                     <div class="jobrole-img">
                         <img src="./logoAndImgaes/avtar7.jpg" alt="image">
                     </div>
@@ -380,8 +401,47 @@
                         <h2>Projects</h2>
                     </div>
                 </div>
-                <div class="row">
-
+                <div class="project-grid">
+                    <div class="project-cards">
+                        <img src="" alt="project screenshot" class="projects-image">
+                        <h3 class="project-title"></h3>
+                        <p class="project-description"></p>
+                        <p class="project-tech-stack"></p>
+                        <div>
+                            <button class="project-github-link">GitHub</button>
+                            <button class="project-deployed-link">Live</button>
+                        </div>
+                    </div>
+                    <div class="project-cards">
+                        <img src="" alt="project screenshot" class="projects-image">
+                        <h3 class="project-title"></h3>
+                        <p class="project-description"></p>
+                        <p class="project-tech-stack"></p>
+                        <div>
+                            <button class="project-github-link">GitHub</button>
+                            <button class="project-deployed-link">Live</button>
+                        </div>
+                    </div>
+                    <div class="project-cards">
+                        <img src="" alt="project screenshot" class="projects-image">
+                        <h3 class="project-title"></h3>
+                        <p class="project-description"></p>
+                        <p class="project-tech-stack"></p>
+                        <div>
+                            <button class="project-github-link">GitHub</button>
+                            <button class="project-deployed-link">Live</button>
+                        </div>
+                    </div>
+                    <div class="project-cards">
+                        <img src="" alt="project screenshot" class="projects-image">
+                        <h3 class="project-title"></h3>
+                        <p class="project-description"></p>
+                        <p class="project-tech-stack"></p>
+                        <div>
+                            <button class="project-github-link">GitHub</button>
+                            <button class="project-deployed-link">Live</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
