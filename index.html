@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./index.css">
     <!-- auto type animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="./logoAndImgaes/Portfolio_logo.png"/>
 </head>
 
 <body>
@@ -59,7 +60,7 @@
         </section>
         <!-- ===============================Home section================================ -->
         <section class="mid-body section Home hidden">
-            <div class="midContainer">
+            <div class="midContainer leftPadd">
                 <div class="row">
                     <div id="user-detail-intro">
                         <h3 class="user-detail-intro-firstLine">Hi, my name is <span class="name">Raj Kumar Sen</span>
@@ -75,7 +76,7 @@
                         </p>
                     </div>
                     <div class="avtar">
-                        <img src="./logoAndImgaes/avtar6.png" alt="Avtar" class="home-img">
+                        <img src="./logoAndImgaes/avtar6.png" alt="Avtar" class="home-img" id="profileImage">
                     </div>
                 </div>
                 <!--drive download link https://drive.google.com/uc?export=download&id=1h2bvMLgVDIAMnLiWZxMrdw_6wrBuLnhH -->
@@ -87,7 +88,7 @@
         </section>
         <!-- ===================================About=================================== -->
         <section class="about section">
-            <div class="midContainer">
+            <div class="midContainer leftPadd">
                 <div class="row">
                     <div class="section-title">
                         <h2>About Me</h2>
@@ -179,7 +180,7 @@
         <!-- ===================================Skills=================================== -->
 
         <section class="Skills section" id="skills">
-            <div class="midContainer">
+            <div class="midContainer leftPadd">
                 <div class="row">
                     <div class="section-title">
                         <h2>Technical Skills</h2>
@@ -245,7 +246,7 @@
                             <img src="./logoAndImgaes/mastercamjpg.jpg" alt="" class="skills-card-img">
                         </div>
                         <div class="hexagon SQL skills-card-name">
-                            <img src="./logoAndImgaes/" alt="" class="skills-card-img">
+                            <img src="./logoAndImgaes/vscode.jpg" alt="" class="skills-card-img">
                         </div>
                     </div>
                 </div>
@@ -344,7 +345,7 @@
 
         <!-- ===================================experience=================================== -->
         <section class="experience section">
-            <div class="midContainer">
+            <div class="midContainer leftPadd">
                 <div class="row">
                     <div class="section-title">
                         <h2>Experience</h2>
@@ -399,7 +400,7 @@
 
         <!-- ===================================Projects=================================== -->
         <section class="projects section" id="projects">
-            <div class="midContainer">
+            <div class="leftPadd">
                 <div class="row">
                     <div class="section-title">
                         <h2>Projects</h2>
@@ -408,69 +409,146 @@
                 <div class="project-grid">
 
                     <!-- Project 1 -->
-                    <div class="project-cards">
+                    <div class="project-card pc1">
                         <img src="./logoAndImgaes/devquery-ss.jpg" alt="project screenshot" class="projects-image">
                         <h3 class="project-title">DevQuery</h3>
                         <p class="project-description">Website for the Developers to ask, problems, Post questions, give
                             answers to others and get solutions to their problems. This project is Inspired by
                             StackOverflow.</p>
-                        <p class="project-tech-stack"><span>Tech-Stack: </span> HTML | CSS | JavaScript | Nodejs | Express | MongoDB | Mongoose</p>                    
+                        <p class="project-tech-stack"><span>Tech-Stack: </span> HTML | CSS | JavaScript | Nodejs |
+                            Express | MongoDB | Mongoose</p>
                         <div>
                             <button class="project-github-link"><a target="_blank"
-                                    href="https://github.com/RAJKUMARSHRIVASH/native-minister-9066">GitHub</a><img src="./logoAndImgaes/github.png" alt="github"></button>
+                                    href="https://github.com/RAJKUMARSHRIVASH/native-minister-9066">GitHub</a><img
+                                    src="./logoAndImgaes/github.png" alt="github"></button>
                             <button class="project-deployed-link"><a target="_blank"
-                                    href="https://rococo-rolypoly-a926ac.netlify.app">Live</a><img src="./logoAndImgaes/project-launch.png" alt="live"></button>
+                                    href="https://rococo-rolypoly-a926ac.netlify.app">Live</a><img
+                                    src="./logoAndImgaes/project-launch.png" alt="live"></button>
                         </div>
                     </div>
 
                     <!-- Project 2 -->
-                    <div class="project-cards">
+                    <div class="project-card pc2">
                         <img src="./logoAndImgaes/DreamHouse-ss.png" alt="project screenshot" class="projects-image">
                         <h3 class="project-title">Dream House</h3>
                         <p class="project-description">This is basically an E-commerce website for all the furniture and
                             decorative items along with the full interior design of the home as well as office indoor
                             and outdoor etc.</p>
-                        <p class="project-tech-stack"><span>Tech-Stack: </span> HTML | CSS | JavaScript | Nodejs | Express | MongoDB | Mongoose</p>
+                        <p class="project-tech-stack"><span>Tech-Stack: </span> HTML | CSS | JavaScript | Nodejs |
+                            Express | MongoDB | Mongoose</p>
                         <div>
                             <button class="project-github-link"><a
                                     href="https://github.com/RAJKUMARSHRIVASH/axiomatic-trouble-8860"
-                                    target="_blank">GitHub</a><img src="./logoAndImgaes/github.png" alt="github"></button>
+                                    target="_blank">GitHub</a><img src="./logoAndImgaes/github.png"
+                                    alt="github"></button>
                             <button class="project-deployed-link"><a href="https://dreamhouseraj.netlify.app"
-                                    target="_blank">Live</a><img src="./logoAndImgaes/project-launch.png" alt="live"></button>
+                                    target="_blank">Live</a><img src="./logoAndImgaes/project-launch.png"
+                                    alt="live"></button>
                         </div>
                     </div>
 
                     <!-- Project 3 -->
-                    <div class="project-cards">
+                    <div class="project-card pc3">
                         <img src="./logoAndImgaes/beautify.jpg" alt="project screenshot" class="projects-image">
                         <h3 class="project-title">Beautify</h3>
-                        <p class="project-description">This is an E-commerce Website for beauty wellness, cosmetics and makeup products. Basically It is a clone of the Nykaa Website</p>
-                        <p class="project-tech-stack"><span>Tech-Stack: </span> HTML | CSS | JavaScript | php | External CSS libraries</p>
+                        <p class="project-description">This is an E-commerce Website for beauty wellness, cosmetics and
+                            makeup products. Basically It is a clone of the Nykaa Website</p>
+                        <p class="project-tech-stack"><span>Tech-Stack: </span> HTML | CSS | JavaScript | php | External
+                            CSS libraries</p>
                         <div>
-                            <button class="project-github-link"><a target="_blank" href="https://github.com/RAJKUMARSHRIVASH/Beautify_E_Commerce_Nykaa">GitHub</a><img src="./logoAndImgaes/github.png" alt="github"></button>
-                            <button class="project-deployed-link"><a target="_blank" href="https://rajbeautify.netlify.app">Live</a><img src="./logoAndImgaes/project-launch.png" alt="live"></button>
+                            <button class="project-github-link"><a target="_blank"
+                                    href="https://github.com/RAJKUMARSHRIVASH/Beautify_E_Commerce_Nykaa">GitHub</a><img
+                                    src="./logoAndImgaes/github.png" alt="github"></button>
+                            <button class="project-deployed-link"><a target="_blank"
+                                    href="https://rajbeautify.netlify.app">Live</a><img
+                                    src="./logoAndImgaes/project-launch.png" alt="live"></button>
                         </div>
                     </div>
 
                     <!-- Project 4 -->
-                    <div class="project-cards">
+                    <div class="project-card pc4">
                         <img src="./logoAndImgaes/FashionMore-ss.png" alt="project screenshot" class="projects-image">
                         <h3 class="project-title">Fashion More</h3>
-                        <p class="project-description">This is completely frontend Project & an E-commerce website for Fashion as well as Decorative Products inspired by Zara.com</p>
+                        <p class="project-description">This is completely frontend Project & an E-commerce website for
+                            Fashion as well as Decorative Products inspired by Zara.com</p>
                         <p class="project-tech-stack"><span>Tech-Stack: </span> HTML | CSS | JavaScript</p>
                         <div>
-                            <button class="project-github-link"><a target="_blank" href="https://github.com/RAJKUMARSHRIVASH/fashion-more-clever-riddle-8962">GitHub</a><img src="./logoAndImgaes/github.png" alt="github"></button>
-                            <button class="project-deployed-link"><a href="https://fashionmore.netlify.app" target="_blank">Live</a><img src="./logoAndImgaes/project-launch.png" alt="live"></button>
+                            <button class="project-github-link"><a target="_blank"
+                                    href="https://github.com/RAJKUMARSHRIVASH/fashion-more-clever-riddle-8962">GitHub</a><img
+                                    src="./logoAndImgaes/github.png" alt="github"></button>
+                            <button class="project-deployed-link"><a href="https://fashionmore.netlify.app"
+                                    target="_blank">Live</a><img src="./logoAndImgaes/project-launch.png"
+                                    alt="live"></button>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
 
+        <!-- ===================================GitHub Stats=================================== -->
+        <section class="react-activity-calendar section">
+            <div class="leftPadd">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>GitHub</h2>
+                    </div>
+                </div>
+                <div class="github">
+                    <h1 class="sub-title">GitHub Statistics</h1>
+                    <br>
+                    <div class="stats">
+                        <a href="https://github.com/RAJKUMARSHRIVASH">
+                            <img id="github-streak-stats"
+                                src="https://github-readme-streak-stats.herokuapp.com?user=RAJKUMARSHRIVASH&theme=radical"
+                                alt="" />
+
+                            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=RAJKUMARSHRIVASH&theme=radical"
+                                id="github-top-langs" />
+
+                            <img id="github-stats-card"
+                                src="https://github-readme-stats.vercel.app/api?username=RAJKUMARSHRIVASH&show_icons=true&line_height=27&count_private=true&title_color=f48c06&text_color=c9cacc&icon_color=2bbc8a&bg_color=141321" />
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <div class="github">
+                    <h1 class="sub-title">GitHub Calender</h1>
+                    <br>
+                    <div class="calendar">
+                        <!-- Loading stuff -->
+                        Loading the data just for you.
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- ===================================Contact=================================== -->
         <section id="contact" class="contact section">
+            <div class="leftPadd">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>Contact Me</h2>
+                    </div>
+                </div>
+                <div class="contact-links">
+                    <div class="github-link">
+                        <img src="./logoAndImgaes/githubLight.png" alt="git logo">
+                        <a target="_blank" href="https://github.com/RAJKUMARSHRIVASH" id="contact-github">GitHub</a>
+                    </div>
+                    <div class="linkedin-link">
+                        <img src="" alt="">
+                        <a target="_blank" href="https://www.linkedin.com/in/raj-kumar-sen-b9b2b319b" id="contact-linkedin">LinkedIn</a>
+                    </div>
+                    <div class="Phone">
+                        <img src="" alt="">
+                        <a id="contact-phone">9522731663</a> 
+                    </div>
+                    <div class="email">
+                        <img src="./logoAndImgaes/mail-inbox-app.png" alt="">
+                        <a target="_blank" href="mailto: rajkumarshrivash374@gmail.com" id="contact-email">E-mail</a>
+                    </div>
 
+                </div>
+            </div>
         </section>
         <div id="backToTop">
             <img onclick="backToTop()"
@@ -479,6 +557,34 @@
         </div>
     </div>
 </body>
-<script src="./index.js"></script>
+<script src="./index.js">
+    const GitHubCalendar = require('github-calendar');
+
+</script>
+
+<!-- ------------------------------------Github Stats---------------------------------------------- -->
+<!-- Include the library. -->
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+
+<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
+<!-- Prepare a container for your calendar. -->
+
+<script>
+    GitHubCalendar(".calendar", "RAJKUMARSHRIVASH");
+
+    // or enable responsive functionality:
+    GitHubCalendar(".calendar", "RAJKUMARSHRIVASH", { responsive: true });
+
+    // Use a proxy
+    GitHubCalendar(".calendar", "RAJKUMARSHRIVASH", {
+        proxy(RAJKUMARSHRIVASH) {
+            return fetch(`https://your-proxy.com/github?user=${RAJKUMARSHRIVASH}`)
+        }
+    }).then(r => r.text())
+</script>
+<!-- ------------------------------------Github Stats---------------------------------------------- -->
 
 </html>

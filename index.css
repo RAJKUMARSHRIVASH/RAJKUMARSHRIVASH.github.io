@@ -332,7 +332,7 @@ li img {
 }
 
 .section {
-    min-height: 90vh;
+    min-height: 92vh;
     display: block;
     opacity: 1;
     margin: auto;
@@ -353,7 +353,6 @@ li img {
 .midContainer {
     max-width: 1100px;
     width: 100%;
-    margin-left: 6%;
     /* outline: auto; */
     margin-top: 25vh;
 }
@@ -447,6 +446,12 @@ h3.profession span::before {
     width: 200px;
     border-radius: 5px;
 
+}
+
+.avtar #profileImage:hover {
+    transform: rotateY(360deg);
+    transition: ease 4s;
+    cursor: pointer;
 }
 
 .avtar::before {
@@ -801,6 +806,12 @@ td {
     outline: auto;
 }
 
+.jobrole-img:hover {
+    transform: rotateY(360deg);
+    transition: ease-in-out 4s;
+    cursor: pointer;
+}
+
 .jobrole-box {
     /* border: 1px solid; */
     width: 100%;
@@ -882,50 +893,73 @@ td {
     width: 100%;
 }
 
-.projects .project-grid .project-cards {
+.projects .project-grid .project-card {
     border: 1px solid;
     border-color: var(--liColor);
-    border-radius: 5px;
     box-shadow: rgba(110, 103, 103, 0.24) 0px 3px 8px;
     text-align: center;
-    transition: transform 0.1s ease;
+    /* transition: transform 0.1s ease;
     transform-style: preserve-3d;
     will-change: transform;
+    
+     */
     display: flex;
     flex-direction: column;
     align-items: center;
     /* justify-content: flex-end; */
+    transition: box-shadow 0.1s, transform 0.1s;
+
 }
 
-.projects .project-grid .project-cards:hover {
-    background-color: var(--sidebarbgcolor);
-    transform: translateZ(12px);
+/* ------------------------------------ */
+/* design on card border */
+.pc1 {
+    border-radius: 0 30px 30px;
 }
 
-.project-cards img {
+.pc2 {
+    border-radius: 30px 0 30px 30px;
+}
+
+.pc3 {
+    border-radius: 30px 30px 30px 0;
+}
+
+.pc4 {
+    border-radius: 30px 30px 0;
+}
+
+/* ------------------------------------- */
+.projects .project-grid .project-card:hover {
+    /* background-color: var(--sidebarbgcolor); */
+    /* transform: translateZ(12px); */
+    box-shadow: 0px 0px 30px rgba(77, 148, 146, 0.6);
+}
+
+.project-card img {
     width: 90%;
     margin-top: 5%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-.project-cards img:hover {
+.project-card img:hover {
     transform: scale(1.11);
     transition: all 1s ease-out;
 
 }
 
-.project-cards h3 {
+.project-card h3 {
     margin: 15px;
 
 }
 
-.project-cards div {
+.project-card div {
     margin: 10px;
     display: flex;
     gap: 10px;
 }
 
-.project-cards div button {
+.project-card div button {
     background-color: var(--nameColor);
     border: none;
     border-radius: 20px;
@@ -933,20 +967,50 @@ td {
     color: aliceblue;
     font-size: medium;
     box-shadow: inset 0 0 0 0 #f9e506;
-    transition: ease-out 0.3s;
+    transition: ease-in 0.6s;
 }
 
-.project-cards div button img {
+.project-card div button img {
     width: 13px;
 }
 
-.project-cards div button:hover {
-    box-shadow: inset 200px 0 0 0 #e9e189;
+.project-card div button:hover {
+    box-shadow: inset 100px 0 0 0 #e9e189;
     color: black;
     cursor: pointer;
 }
 
 /* --------------------------------------- */
+
+.leftPadd {
+    margin-left: 6%;
+
+}
+
+
+/* ------------------Github stats--------------------- */
+
+.react-activity-calendar {
+    /* outline: auto; */
+}
+
+.sub-title {
+    text-align: center;
+}
+
+.stats {
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+}
+
+.stats img {
+    width: 30%;
+}
+
+.contact-links img{
+    width: 20px;
+}
 
 @media screen and (max-width:550px) {
     #nav-menu {
