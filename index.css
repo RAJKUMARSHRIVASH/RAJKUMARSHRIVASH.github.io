@@ -332,7 +332,7 @@ li img {
 }
 
 .section {
-    min-height: 92vh;
+    min-height: 88vh;
     display: block;
     opacity: 1;
     margin: auto;
@@ -1008,10 +1008,41 @@ td {
     width: 30%;
 }
 
-.contact-links img{
-    width: 20px;
+.contact-box{
+    margin-top: 8vh;
+    position: relative;
+}
+.contact-links {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
+.contact-links img {
+    width: 30px;
+}
+
+.contact-links>div {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: large;
+}
+
+.cartoon img {
+    width: 40%;
+    position: absolute;
+    top: -150px;
+    right: 0;
+}
+
+#footer{
+    padding: 15px;
+    background-color: var(--liColor);
+    text-align: center;
+    color: white;
+}
 @media screen and (max-width:550px) {
     #nav-menu {
         /* border: 1px solid; */
