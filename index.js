@@ -87,3 +87,14 @@ function downloadResume(){
     window.open("https://drive.google.com/file/d/1h2bvMLgVDIAMnLiWZxMrdw_6wrBuLnhH/view?usp=drivesdk"); // drive link for preview
     location.href = ("https://drive.google.com/uc?export=download&id=1h2bvMLgVDIAMnLiWZxMrdw_6wrBuLnhH"); // drive link fro download
 }
+
+
+// -----------------------------------Copy To Clipboard -------------------------------------------
+
+function copyToClipboard(){
+    const number = document.querySelector("#contact-phone").innerText;
+    navigator.clipboard.writeText(number);
+    alert("Number Copied to the Clipboard");
+    
+}
+// ***************************************************************************************************************

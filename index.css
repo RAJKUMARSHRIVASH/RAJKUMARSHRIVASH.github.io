@@ -950,6 +950,17 @@ td {
 
 .project-card h3 {
     margin: 15px;
+    color: var(--midBodyName);
+
+}
+
+.project-card .project-description {
+    margin: 0 15px 5px 15px;
+
+}
+.project-card .project-tech-stack span{
+    color: var(--liColor);
+    font-weight: bold;
 
 }
 
@@ -1008,10 +1019,11 @@ td {
     width: 30%;
 }
 
-.contact-box{
+.contact-box {
     margin-top: 8vh;
     position: relative;
 }
+
 .contact-links {
     width: 30%;
     display: flex;
@@ -1037,12 +1049,21 @@ td {
     right: 0;
 }
 
-#footer{
+#footer {
     padding: 15px;
     background-color: var(--liColor);
     text-align: center;
     color: white;
 }
+
+#copyBTN{
+    width: 20px;
+}
+
+#copyBTN:hover{
+    cursor: pointer;
+}
+
 @media screen and (max-width:550px) {
     #nav-menu {
         /* border: 1px solid; */
