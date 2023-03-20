@@ -958,7 +958,8 @@ td {
     margin: 0 15px 5px 15px;
 
 }
-.project-card .project-tech-stack span{
+
+.project-card .project-tech-stack span {
     color: var(--liColor);
     font-weight: bold;
 
@@ -1056,12 +1057,47 @@ td {
     color: white;
 }
 
-#copyBTN{
+.copy-kro {
+    position: relative;
+}
+
+.copy-kro:hover .tooltiptext {
+    visibility: visible;
+}
+
+#copyBTN {
     width: 20px;
 }
 
-#copyBTN:hover{
+#copyBTN:hover {
     cursor: pointer;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    /* width: 120px; */
+    white-space: nowrap;
+    background-color: rgb(255, 168, 183);
+    color: blue;
+    text-align: center;
+    font-size: small;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 0;
+    bottom: 150%;
+    margin-left: -55px;
+}
+
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(255, 168, 183) transparent transparent transparent;
 }
 
 @media screen and (max-width:550px) {
