@@ -9,6 +9,7 @@
 
 html {
     scroll-behavior: smooth;
+
 }
 
 ::-webkit-scrollbar {
@@ -64,6 +65,7 @@ body {
     margin: auto;
     --nav-load-time: 300ms;
     --nav-link-load-time: 500ms;
+    /* overflow-x: hidden; */
 }
 
 .top-navbar {
@@ -338,6 +340,8 @@ li img {
     margin: auto;
     padding: 5vh 10vw;
     /* outline: auto; */
+    max-width: 1100px;
+    width: 100%;
 
 }
 
@@ -351,8 +355,8 @@ li img {
 }
 
 .midContainer {
-    max-width: 1100px;
-    width: 100%;
+    /* max-width: 1100px; */
+    /* width: 100%; */
     /* outline: auto; */
     margin-top: 25vh;
 }
@@ -362,10 +366,11 @@ li img {
     /* flex-wrap: wrap; */
     /* margin-right: -5px; */
     align-items: flex-start;
+    gap: 30px;
 
 }
 
-.mid-body .user-detail-intro {
+.mid-body #user-detail {
     flex: 0 0 70%;
     max-width: 70%;
 }
@@ -430,6 +435,7 @@ h3.profession span::before {
 #user-detail p {
     margin-bottom: 50px;
     font-size: 20px;
+    text-align: justify;
 }
 
 .mid-body .avtar {
@@ -437,7 +443,6 @@ h3.profession span::before {
     max-width: 70%;
     text-align: center;
     margin-top: 2%;
-    margin-right: -2%;
     position: relative;
     z-index: -1;
 }
@@ -504,7 +509,6 @@ h3.profession span::before {
 /*----------------- About section-----------  */
 
 .section-title {
-    margin-right: 10%;
     white-space: nowrap;
     margin-top: 10vh;
 
@@ -570,7 +574,7 @@ h3.profession span::before {
     /*  line height is for spacing between two lines  */
     /* margin-bottom: 30px; */
     color: var(--midbodypara);
-
+    text-align: justify;
 }
 
 .personal-info {
@@ -866,7 +870,7 @@ td {
 
 .jobrole-box .job .duration .circle-dot {
     position: absolute;
-    left: -92.5px;
+    left: -87px;
     top: 10px;
     height: 20px;
     width: 20px;
@@ -876,7 +880,8 @@ td {
 }
 
 .jobrole-box .job .job-description {
-    padding-right: 25%;
+    width: 80%;
+    text-align: justify;
 }
 
 .jobrole-box .job .duration img {
@@ -956,7 +961,12 @@ td {
 
 .project-card .project-description {
     margin: 0 15px 5px 15px;
+    text-align: justify;
+}
 
+.project-card .project-tech-stack {
+    margin: 0 15px 0 15px;
+    text-align: justify;
 }
 
 .project-card .project-tech-stack span {
