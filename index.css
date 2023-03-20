@@ -538,17 +538,17 @@ h3.profession span::before {
     left: 0;
 }
 
-.about .about-content {
+#about .about-content {
     flex: 0 0 100%;
     max-width: 100%;
 }
 
-.about .about-content .about-text {
+#about .about-content .about-text {
     flex: 0 0 70%;
     max-width: 70%;
 }
 
-.about .about-content img {
+#about .about-content img {
     flex: 0 0 30%;
     max-width: 330px;
     margin-left: 5%;
@@ -556,7 +556,7 @@ h3.profession span::before {
 }
 
 
-.about .about-content .about-text h3 {
+#about .about-content .about-text h3 {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -564,7 +564,7 @@ h3.profession span::before {
     height: 25px;
 }
 
-.about .about-content .about-text p {
+#about .about-content .about-text p {
     font-size: 20px;
     /* line-height: 30px;      */
     /*  line height is for spacing between two lines  */
