@@ -104,7 +104,7 @@ function downloadResumeCV() {
 // -----------------------------------Copy To Clipboard -------------------------------------------
 
 function copyToClipboard() {
-    const number = document.querySelector("#phone-number").innerText;
+    const number = document.querySelector("#contact-phone").innerText;
     navigator.clipboard.writeText(number);
     alert("Number Copied to the Clipboard");
 
