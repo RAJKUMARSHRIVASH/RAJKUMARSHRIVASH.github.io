@@ -37,6 +37,12 @@ function myFunction(x) {
     }
 }
 
+let aa = document.querySelector(".sidebar-icon");
+function hideSidebar() {
+    sidebar.style.visibility = "hidden";
+    aa.classList.remove("change");
+}
+
 //   *******************************************************************************************
 
 //********************* */ back to top button functionality********************************
@@ -61,33 +67,35 @@ const backToTop = () => {
 
 //*********************************side nav bar active / inactive************************************************ */
 
-let sidebarActive = document.querySelector("#sidebar-nav-menu-box ul li");
+// let sidebarActive = document.querySelector("#sidebar-nav-menu-box ul li");
 
-sidebarActive.onclick = () => {
-    if (!sidebarActive.classList.contains("active")) {
-        sidebarActive.classList.add("active");
-    }
-    else {
-        sidebarActive.classList.remove("active")
-    }
-}
+// sidebarActive.onclick = () => {
+//     if (!sidebarActive.classList.contains("active")) {
+//         sidebarActive.classList.add("active");
+//     }
+//     else {
+//         sidebarActive.classList.remove("active")
+//     }
+// }
+
+
 
 // ****************************************typing Animation***************************************************
 
 var typed = new Typed(".typing2", {
-    strings: ["Web Developer", "Confident Programmer","Problem Solver","Design Engineer"],
+    strings: ["Web Developer", "Confident Programmer", "Problem Solver", "Design Engineer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
-  });
+});
 // ***************************************************************************************************************
 
 
-function downloadResume(){
+function downloadResume() {
     window.open("https://drive.google.com/file/d/1h2bvMLgVDIAMnLiWZxMrdw_6wrBuLnhH/view?usp=drivesdk"); // drive link for preview
 }
 
-function downloadResumeCV(){
+function downloadResumeCV() {
     window.open("https://drive.google.com/file/d/1h2bvMLgVDIAMnLiWZxMrdw_6wrBuLnhH/view?usp=drivesdk"); // drive link for preview
     location.href = ("https://drive.google.com/uc?export=download&id=1h2bvMLgVDIAMnLiWZxMrdw_6wrBuLnhH"); // drive link fro download
 }
@@ -95,11 +103,12 @@ function downloadResumeCV(){
 
 // -----------------------------------Copy To Clipboard -------------------------------------------
 
-function copyToClipboard(){
+function copyToClipboard() {
     const number = document.querySelector("#contact-phone").innerText;
     navigator.clipboard.writeText(number);
     alert("Number Copied to the Clipboard");
-    
+
 }
 
 // ***************************************************************************************************************
+
