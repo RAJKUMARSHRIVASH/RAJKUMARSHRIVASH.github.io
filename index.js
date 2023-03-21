@@ -112,3 +112,12 @@ function copyToClipboard() {
 
 // ***************************************************************************************************************
 
+let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
+let resume2 = document.getElementById("resume-button-2").addEventListener("click", NewTab)
+
+function NewTab() {
+  window.open(
+    "https://drive.google.com/file/d/1h2bvMLgVDIAMnLiWZxMrdw_6wrBuLnhH/view?usp=drivesdk",
+    "_blank"
+  );
+}
