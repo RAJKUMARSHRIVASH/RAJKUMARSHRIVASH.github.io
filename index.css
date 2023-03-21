@@ -171,9 +171,8 @@ body {
 #nav-menu-box {
     display: flex;
     align-items: center;
-    /* border: 1px solid; */
-    /* margin: auto; */
     width: 60%;
+    margin-left: -5%;
 }
 
 #nav-menu-box ul {
@@ -181,7 +180,7 @@ body {
     align-items: center;
     /* border: 1px solid; */
     margin: auto;
-    gap: 30px;
+    gap: 1%;
     font-weight: bold;
     font-size: large;
 }
