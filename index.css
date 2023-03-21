@@ -494,6 +494,27 @@ h3.profession span::before {
 }
 
 
+.btn-resume {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 8px 13px;
+    background-color: var(--profession);
+    color: var(--bodyColor);
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    white-space: nowrap;
+    /* white-space: nowrap; basically make fix the any thing written with space (like name) and dont allow it to be wrapped while screen resizing */
+    transition: all 0.2s ease;
+}
+
+
+.btn-resume:hover {
+    transform: scale(1.03);
+    background-color: var(--resumeBtnHover);
+    cursor: pointer;
+}
+
 #resume-button-2 {
     font-size: 17px;
     font-weight: 500;
