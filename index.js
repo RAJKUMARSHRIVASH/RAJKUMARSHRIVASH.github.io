@@ -92,7 +92,7 @@ var typed = new Typed(".typing2", {
 
 
 function downloadResume() {
-    window.open("https://drive.google.com/file/d/1h2bvMLgVDIAMnLiWZxMrdw_6wrBuLnhH/view?usp=drivesdk"); // drive link for preview
+    // window.open("https://drive.google.com/file/d/1h2bvMLgVDIAMnLiWZxMrdw_6wrBuLnhH/view?usp=drivesdk"); // drive link for preview
 }
 
 function downloadResumeCV() {
