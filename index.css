@@ -494,7 +494,7 @@ h3.profession span::before {
 }
 
 
-.btn-resume {
+#resume-button-2 {
     font-size: 17px;
     font-weight: 500;
     padding: 8px 13px;
@@ -509,7 +509,7 @@ h3.profession span::before {
 }
 
 
-.btn-resume:hover {
+#resume-button-2:hover {
     transform: scale(1.03);
     background-color: var(--resumeBtnHover);
     cursor: pointer;
