@@ -1132,6 +1132,10 @@ td {
 /* Mobile size */
 @media screen and (min-width:0px) and (max-width:550px) {
 
+    body{
+        /* overflow-x: hidden; */
+    }
+
     #nav-menu {
         /* border: 1px solid; */
 
@@ -1152,6 +1156,12 @@ td {
 
     #nav-menu-box ul {
         display: none;
+    }
+
+    #resume-button-1 {
+        outline: auto;
+        display: block;
+        visibility: visible;
     }
 
     #sidebar {

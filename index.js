@@ -1,5 +1,5 @@
 
-// *******************************Light and dark mode switch******************************************
+// *****************  Light and dark mode switch  ***********************
 
 var icon = document.getElementById("light-dark-icon");
 var logo = document.getElementById("logo");
@@ -17,9 +17,7 @@ icon.onclick = function () {
     }
 }
 
-// *************************************************************************************************
-
-// *********************Sidebar icon menu opener************************************
+// *********************  Sidebar icon menu opener  ***********************
 // Hamburger
 
 let sidebar = document.getElementById("sidebar");
@@ -43,9 +41,7 @@ function hideSidebar() {
     aa.classList.remove("change");
 }
 
-//   *******************************************************************************************
-
-//********************* */ back to top button functionality********************************
+//*********************  back to top button functionality  ****************
 
 let btn = document.querySelector("#backToTop");
 window.addEventListener("scroll", () => {
@@ -58,14 +54,13 @@ window.addEventListener("scroll", () => {
 })
 
 const backToTop = () => {
-    document.body.scrollTop = 0;  // For Safari
-    document.documentElement.scrollTop = 0;  // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0;                // For Safari
+    document.documentElement.scrollTop = 0;     // For Chrome, Firefox, IE and Opera
     //  ( documentElement  or  scrollingElement )
 }
 
-// ***************************************************************************************************************
 
-//*********************************side nav bar active / inactive************************************************ */
+//*********************  side nav bar active / inactive  ******************* */
 
 // let sidebarActive = document.querySelector("#sidebar-nav-menu-box ul li");
 
@@ -80,7 +75,7 @@ const backToTop = () => {
 
 
 
-// ****************************************typing Animation***************************************************
+// ****************************  typing Animation  ***************************************
 
 var typed = new Typed(".typing2", {
     strings: ["Web Developer", "Confident Programmer", "Problem Solver", "Design Engineer"],
@@ -88,8 +83,6 @@ var typed = new Typed(".typing2", {
     backSpeed: 60,
     loop: true,
 });
-// ***************************************************************************************************************
-
 
 function downloadResume() {
     window.open("https://drive.google.com/file/d/1h2bvMLgVDIAMnLiWZxMrdw_6wrBuLnhH/view?usp=drivesdk"); // drive link for preview
