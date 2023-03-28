@@ -13,11 +13,15 @@ html {
 }
 
 ::-webkit-scrollbar {
-    background-color: rgb(223, 220, 220);
+    background-color: rgb(196, 192, 192);
+    width: 10px;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--liColor);
+    border-radius: 10px;
+
 }
 
 :root {
@@ -58,14 +62,10 @@ html {
 body {
     background-color: var(--bodyColor);
     color: var(--firstColor);
-    /* font-family: 'Noto Sans', sans-serif; */
-    /* font-family: 'Abel', sans-serif; */
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    /* font-family: 'Sora', sans-serif; */
     margin: auto;
     --nav-load-time: 300ms;
     --nav-link-load-time: 500ms;
-    /* overflow-x: hidden; */
 }
 
 .top-navbar {
@@ -74,7 +74,6 @@ body {
 }
 
 #nav-menu {
-    /* border: 1px solid; */
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     display: flex;
     align-items: center;
@@ -178,7 +177,6 @@ body {
 #nav-menu-box ul {
     display: flex;
     align-items: center;
-    /* border: 1px solid; */
     margin: auto;
     gap: 1%;
     font-weight: bold;
@@ -271,7 +269,6 @@ a {
     display: flex;
     flex-direction: column;
     list-style: none;
-    /* gap: 5vh; */
     padding: 10%;
     justify-content: center;
 }
@@ -347,14 +344,18 @@ li a {
     opacity: 1;
     margin: auto;
     padding: 5vh 10vw;
-    /* outline: auto; */
     max-width: 1100px;
     width: 100%;
 
 }
 
-.hidden {
-    display: hidden !important;
+.midContainer {
+    margin-top: 25vh;
+}
+
+.leftPadd {
+    margin-left: 6%;
+
 }
 
 .mid-body {
@@ -362,17 +363,8 @@ li a {
 
 }
 
-.midContainer {
-    /* max-width: 1100px; */
-    /* width: 100%; */
-    /* outline: auto; */
-    margin-top: 25vh;
-}
-
 .row {
     display: flex;
-    /* flex-wrap: wrap; */
-    /* margin-right: -5px; */
     align-items: flex-start;
     gap: 30px;
 
@@ -492,7 +484,6 @@ h3.profession span::before {
     right: 10px;
 }
 
-
 .btn-resume {
     font-size: 17px;
     font-weight: 500;
@@ -506,7 +497,6 @@ h3.profession span::before {
     /* white-space: nowrap; basically make fix the any thing written with space (like name) and dont allow it to be wrapped while screen resizing */
     transition: all 0.2s ease;
 }
-
 
 .btn-resume:hover {
     transform: scale(1.03);
@@ -578,9 +568,6 @@ h3.profession span::before {
 
 #about .about-content .about-text p {
     font-size: 20px;
-    /* line-height: 30px;      */
-    /*  line height is for spacing between two lines  */
-    /* margin-bottom: 30px; */
     color: var(--midbodypara);
     text-align: justify;
 }
@@ -589,7 +576,6 @@ h3.profession span::before {
     margin-right: 60px;
     margin-top: 30px;
     margin-bottom: 30px;
-    /* outline: auto; */
     width: 100%;
     white-space: nowrap;
 }
@@ -602,7 +588,7 @@ h3.profession span::before {
 .personal-info .info-item p {
     color: var(--profession);
     font-weight: 700;
-    padding-bottom: 6px;
+    padding-top: 5px;
     border-bottom: 2px solid rgba(220, 213, 213, 0.842);
 }
 
@@ -614,7 +600,6 @@ h3.profession span::before {
     color: var(--profession);
     font-weight: 700;
     padding-bottom: 6px;
-    padding: 1%;
 }
 
 .education .duration {
@@ -633,17 +618,12 @@ h3.profession span::before {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    /* border: 1px solid; */
     margin-bottom: 20px;
 }
 
 .cntnr .hexagonArea {
     display: flex;
-    /* border: 1px solid; */
     z-index: 0;
-    /* position: relative; */
-
-
 }
 
 .cntnr .hexagonArea img {
@@ -691,7 +671,7 @@ h3.profession span::before {
     display: flex;
     align-items: center;
     margin: auto;
-    /* border: 1px solid; */
+    display: none;
 }
 
 .skill-percentage .skill-graph {
@@ -700,7 +680,6 @@ h3.profession span::before {
 
 .skill-percentage .skill-graph .skill-item {
     margin-bottom: 1%;
-    /* position: relative; */
 
 }
 
@@ -713,7 +692,6 @@ h3.profession span::before {
 .skill-percentage .skill-graph .skill-item span {
     color: var(--midbodypara);
     position: absolute;
-    /* right: 70px; */
     right: 11%;
 
 }
@@ -750,17 +728,13 @@ h3.profession span::before {
     position: fixed;
     bottom: 5px;
     right: 5px;
-    /* display: none; */
     opacity: 0;
     transition: all .4s;
 
 }
 
 #backToTop.active {
-
-    /* display: block; */
     opacity: 1;
-
 }
 
 #backToTop>img {
@@ -827,9 +801,7 @@ td {
 }
 
 .jobrole-box {
-    /* border: 1px solid; */
     width: 100%;
-    /* height: 70vh; */
     position: relative;
     padding: 0 5%;
     display: flex;
@@ -849,7 +821,6 @@ td {
 }
 
 .jobrole-box .job {
-    /* border: 1px solid; */
     margin: 2% 5%;
     color: var(--midbodypara);
     display: flex;
@@ -1014,10 +985,6 @@ td {
 
 /* --------------------------------------- */
 
-.leftPadd {
-    margin-left: 6%;
-
-}
 
 
 /* ------------------Github stats--------------------- */
@@ -1132,12 +1099,19 @@ td {
 /* Mobile size */
 @media screen and (min-width:0px) and (max-width:550px) {
 
-    body{
+    ::-webkit-scrollbar {
+        width: 5px;
+        border-radius: 5px;
+    }
+
+    body {
         /* overflow-x: hidden; */
+        width: 100%;
     }
 
     #nav-menu {
         /* border: 1px solid; */
+        gap: 72%;
 
     }
 
@@ -1150,18 +1124,11 @@ td {
     }
 
     #user-detail-name {
-        font-size: large;
-
+        font-size: medium;
     }
 
     #nav-menu-box ul {
         display: none;
-    }
-
-    #resume-button-1 {
-        outline: auto;
-        display: block;
-        visibility: visible;
     }
 
     #sidebar {
@@ -1183,7 +1150,246 @@ td {
         font-size: 70%;
     }
 
+    .sidebar-icon {
+        top: 8vh;
+    }
 
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 20px;
+        height: 2px;
+
+    }
+
+    .change .bar1 {
+        transform: translate(0, 7px) rotate(-45deg);
+    }
+
+    .section {
+        padding: 2%;
+    }
+
+    .midContainer {
+        margin-top: 20vh;
+    }
+
+    .leftPadd {
+        margin-left: 0;
+
+    }
+
+    .row {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .mid-body #user-detail {
+        max-width: 100%;
+        flex: 0 0 90%;
+
+    }
+
+    h3.user-detail-intro-firstLine {
+        font-size: 16px;
+        margin: 3px 0;
+    }
+
+    h3.user-detail-intro-firstLine span {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    h3.profession {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    #user-detail p {
+        margin-bottom: 20px;
+        font-size: 14px;
+
+    }
+
+    .avtar img {
+        width: 160px;
+        margin-bottom: 30px;
+    }
+
+    .avtar::before {
+        width: 50px;
+        height: 50px;
+        border-left: 6px solid;
+        border-top: 6px solid;
+        top: -30px;
+        left: -40px;
+    }
+
+    .avtar::after {
+        width: 50px;
+        height: 50px;
+        border-right: 6px solid;
+        border-bottom: 6px solid;
+        bottom: 0;
+        right: -40px;
+    }
+
+
+    .btns {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .btn-resume {
+        font-size: 13px;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+    .section-title {
+        margin-top: 5vh;
+        margin-left: -200px;
+    }
+
+    .section-title h2 {
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+
+    .section-title h2::before {
+        width: 40px;
+        border-bottom: 3px solid;
+    }
+
+    .section-title h2::after {
+        width: 20px;
+        border-bottom: 3px solid;
+        bottom: -10px;
+    }
+
+    /* ------------ About --------------- */
+    #about .about-content .about-text {
+        flex: 0 0 90%;
+        max-width: 100%;
+    }
+
+    #about .about-content .about-text h3 {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        height: 20px;
+    }
+
+    #about .about-content .about-text p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    #about .about-content img {
+        flex: 0 0 100%;
+        max-width: 300px;
+        margin-left: 0;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
+    /* ------------ Personal Info --------------- */
+    .personal-info {
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 90%;
+        white-space: nowrap;
+    }
+
+    .personal-info h3 {
+        color: orangered;
+        margin-bottom: 0;
+        font-size: small;
+    }
+
+    .personal-info .info-item p {
+        font-weight: 500;
+        font-size: 12px;
+        border-bottom: 1px solid rgba(220, 213, 213, 0.842);
+    }
+
+    .personal-info .info-item-education {
+        font-weight: 500;
+        padding-bottom: 6px;
+        font-size: 12px;
+    }
+
+    .education .duration {
+        font-size: 10px;
+    }
+
+    /* ------------ Skills --------------- */
+    .cntnr .hexagonArea {
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cntnr .hexagonArea img {
+        width: 60px;
+    }
+
+    .cntnr .hexagonArea .hexagon {
+        width: 70px;
+        height: 90px;
+        margin: 3px;
+        font-size: small;
+    }
+
+    .cntnr .hexagonArea.middle {
+        transform: translateY(0px);
+    }
+
+    .cntnr .hexagonArea.last {
+        transform: translateY(0px);
+    }
+
+    /* -----------------Skill percentage (Hidden for now)----------------- */
+
+    .skill-percentage {
+        flex-wrap: wrap;
+    }
+
+    .skill-percentage .skill-graph .skill-item span {
+        right: -15%;
+
+    }
+
+    .skill-percentage .skill-graph .skill-item .parent {
+        margin-left: -15%;
+    }
+    /* --------------------------------------------------- */
+    
+    #backToTop>img {
+        width: 40px;
+    }
+    
+    /* ------------------Experience----------------------- */
+    .jobrole-img {
+        width: 50%;
+    }
+
+    .jobrole-box {
+        padding: 0 0 0 5%;
+    }
+
+    .jobrole-box .job {
+        margin: 2% 5%;
+        gap: 3px;
+    }
 }
 
 /* Tablet size medium screen size */

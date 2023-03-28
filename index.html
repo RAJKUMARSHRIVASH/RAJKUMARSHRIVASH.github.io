@@ -24,11 +24,16 @@
                 </div>
                 <div id="nav-menu-box">
                     <ul>
-                        <li><img src="./logoAndImgaes/Home.png" alt="Home"><a href="#home" class="nav-link home">Home</a></li>
-                        <li><img src="./logoAndImgaes/info.png" alt="info"><a href="#about" class="nav-link about">About</a></li>
-                        <li><img src="./logoAndImgaes/skills.png" alt="skills"><a href="#skills" class="nav-link skills">Skills</a></li>
-                        <li><img src="./logoAndImgaes/layers.png" alt="projects"><a href="#projects" class="nav-link projects">Projects</a></li>
-                        <li><img src="./logoAndImgaes/contact-us.png" alt="contact"><a href="#contact"class="nav-link contact">Contact</a></li>
+                        <li><img src="./logoAndImgaes/Home.png" alt="Home"><a href="#home"
+                                class="nav-link home">Home</a></li>
+                        <li><img src="./logoAndImgaes/info.png" alt="info"><a href="#about"
+                                class="nav-link about">About</a></li>
+                        <li><img src="./logoAndImgaes/skills.png" alt="skills"><a href="#skills"
+                                class="nav-link skills">Skills</a></li>
+                        <li><img src="./logoAndImgaes/layers.png" alt="projects"><a href="#projects"
+                                class="nav-link projects">Projects</a></li>
+                        <li><img src="./logoAndImgaes/contact-us.png" alt="contact"><a href="#contact"
+                                class="nav-link contact">Contact</a></li>
                         <li id="resume-button-1"><img src="./logoAndImgaes/download.png" alt="download"><a
                                 id="resume-link-1" download href="./logoAndImgaes/Raj_Sen_Resume.pdf"
                                 onclick="downloadResume()" target="_blank" class="nav-link resume">Resume</a></li>
@@ -44,21 +49,26 @@
             <div id="sidebar">
                 <div id="sidebar-nav-menu-box">
                     <ul>
-                        <li onclick="hideSidebar()"><img src="./logoAndImgaes/Home.png" alt="Home"><a href="#home">Home</a></li>
-                        <li onclick="hideSidebar()"><img src="./logoAndImgaes/info.png" alt="info"><a href="#about">About</a></li>
-                        <li onclick="hideSidebar()"><img src="./logoAndImgaes/skills.png" alt="skills"><a href="#skills">Skills</a></li>
-                        <li onclick="hideSidebar()"><img src="./logoAndImgaes/layers.png" alt="projects"><a href="#projects">Projects</a></li>
-                        <li onclick="hideSidebar()"><img src="./logoAndImgaes/contact-us.png" alt="contact"><a href="#contact">Contact</a></li>
+                        <li onclick="hideSidebar()"><img src="./logoAndImgaes/Home.png" alt="Home"><a
+                                href="#home">Home</a></li>
+                        <li onclick="hideSidebar()"><img src="./logoAndImgaes/info.png" alt="info"><a
+                                href="#about">About</a></li>
+                        <li onclick="hideSidebar()"><img src="./logoAndImgaes/skills.png" alt="skills"><a
+                                href="#skills">Skills</a></li>
+                        <li onclick="hideSidebar()"><img src="./logoAndImgaes/layers.png" alt="projects"><a
+                                href="#projects">Projects</a></li>
+                        <li onclick="hideSidebar()"><img src="./logoAndImgaes/contact-us.png" alt="contact"><a
+                                href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </section>
         <!-- ===============================Home section================================ -->
-        <section class="mid-body section hidden" id="home">
+        <section class="mid-body section" id="home">
             <div class="midContainer leftPadd">
                 <div class="row">
                     <div id="user-detail">
-                        <h3 class="user-detail-intro-firstLine">Hi, my name is<span class="name">Raj Kumar Sen</span>
+                        <h3 class="user-detail-intro-firstLine">Hi, my name is <span class="name">Raj Kumar Sen</span>
                         </h3>
                         <h3 class="profession">I am a <span class="typing">Full Stack Web Developer</span></h3>
                         <p>I have 1200+ hours of hands on experience in DSA
@@ -73,8 +83,11 @@
                         <img src="./logoAndImgaes/avtar6.png" alt="Avtar" class="home-img" id="profileImage">
                     </div>
                 </div>
-                <button class="btn-resume" id="resume-button-2"><a target="_blank" id="resume-link-2" download
-                        href="./logoAndImgaes/Raj_Sen_Resume.pdf" onclick="downloadResume()">Download Resume</a></button>
+                <div class="btns">
+                    <button class="btn-resume" id="resume-button-2"><a target="_blank" id="resume-link-2" download
+                            href="./logoAndImgaes/Raj_Sen_Resume.pdf" onclick="downloadResume()">Download
+                            Resume</a></button>
+                </div>
             </div>
         </section>
         <!-- ===================================About=================================== -->
@@ -93,7 +106,8 @@
                                 <p id="user-detail-intro">A self-disciplined, self-motivated and enthusiastic web-
                                     Developer, always tries to give best with a positive attitude and optimal
                                     approach towards the goal. Ready to tackle the challenges with
-                                    proficiency in JavaScript, DSA, Java and NodeJs along with MongoDB and SQL. Adaptable to learning
+                                    proficiency in JavaScript, DSA, Java and NodeJs along with MongoDB and SQL.
+                                    Adaptable to learning
                                     new technologies. Looking forward to starting a career in a
                                     highly growing environment to get organizational goals very
                                     confidently.
@@ -154,10 +168,12 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn-resume" onclick="downloadResumeCV()"><a target="_blank">Download
-                                CV</a></button>
-                        <button class="btn-resume send-mail"><a href="mailto: rajkumarshrivash374@gmail.com">
-                                Hire Me</a></button>
+                        <div class="btns">
+                            <button class="btn-resume" onclick="downloadResumeCV()"><a target="_blank">Download
+                                    CV</a></button>
+                            <button class="btn-resume send-mail"><a href="mailto: rajkumarshrivash374@gmail.com">
+                                    Hire Me</a></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -233,7 +249,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="skill-percentage">
+                <div class="skill-percentage">
                     <div class="skill-graph">
                         <div class="skill-item">
                             <h4>JavaScript<span>75%</span></h4>
@@ -322,7 +338,7 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </section>
         <!-- ===================================experience=================================== -->
