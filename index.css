@@ -1030,27 +1030,6 @@ td {
     font-size: large;
 }
 
-.cartoon img {
-    width: 40%;
-    position: absolute;
-    top: -150px;
-    right: 0;
-    transition: all 1s ease;
-
-}
-
-.cartoon img:hover {
-    transform: scale(1.2);
-    transition: all 1s ease;
-}
-
-#footer {
-    padding: 15px;
-    background-color: var(--liColor);
-    text-align: center;
-    color: white;
-}
-
 .copy-kro {
     position: relative;
 }
@@ -1094,6 +1073,48 @@ td {
     border-color: rgb(255, 168, 183) transparent transparent transparent;
 }
 
+.cartoon img {
+    width: 40%;
+    position: absolute;
+    top: -150px;
+    right: 0;
+    transition: all 1s ease;
+
+}
+
+.cartoon img:hover {
+    transform: scale(1.2);
+    transition: all 1s ease;
+}
+
+#footer {
+    padding: 15px;
+    background-color: var(--liColor);
+    text-align: center;
+    color: white;
+}
+
+/* --------------- Github Calender ----------------- */
+.react-activity-calendar .contrib-number {
+    font-weight: 200;
+    font-size: 20px;
+    color: #eb1414;
+}
+
+section .calendar {
+    border-color: var(--liColor);
+    min-height: auto;
+}
+
+.react-activity-calendar .table-column {
+    border-color: var(--liColor);
+}
+
+.react-activity-calendar .ContributionCalendar-label {
+    fill: var(--firstColor);
+}
+
+
 /* -----------------Media queries---------------------------- */
 
 /* Mobile size */
@@ -1105,12 +1126,16 @@ td {
     }
 
     body {
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
         width: 100%;
     }
 
+    .section {
+        margin: auto;
+        width: 85%;
+    }
+
     #nav-menu {
-        /* border: 1px solid; */
         gap: 72%;
 
     }
@@ -1459,6 +1484,68 @@ td {
 
     .stats img {
         width: 80%;
+    }
+
+    /* --------------- Github Calender ----------------- */
+
+    .react-activity-calendar .contrib-number {
+        font-weight: 200;
+        font-size: 12px;
+        color: #eb1414;
+    }
+
+    .react-activity-calendar .float-right {
+        font-size: 10px;
+    }
+
+    /* --------------- Contact section ----------------- */
+
+    .contact-box {
+        margin-top: 8vh;
+        position: relative;
+        width: 80%;
+        margin: auto;
+    }
+
+    .contact-links {
+        margin-left: -50%;
+    }
+
+    .contact-links img {
+        width: 15px;
+    }
+
+    .contact-links>div {
+        font-size: small;
+    }
+
+    #copyBTN {
+        width: 12px;
+    }
+
+    .tooltiptext {
+        color: blue;
+        font-size: 10px;
+        padding: 5px;
+        margin-left: -42px;
+    }
+
+    .cartoon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cartoon img {
+        width: 80%;
+        position: initial;
+        margin-top: -15%;
+
+    }
+
+    #footer {
+        padding: 8px;
+        font-size: small;
     }
 }
 
