@@ -1094,7 +1094,7 @@ td {
 .react-activity-calendar .contrib-number {
     font-weight: 200;
     font-size: 20px;
-    color: #eb1414;
+    color: var(--midBodyName);
 }
 
 section .calendar {
@@ -1299,7 +1299,7 @@ section .calendar {
         flex: 0 0 90%;
         max-width: 100%;
     }
-    
+
     #about .about-content .about-text h3 {
         font-size: 16px;
         font-weight: 500;
@@ -1488,7 +1488,6 @@ section .calendar {
     .react-activity-calendar .contrib-number {
         font-weight: 200;
         font-size: 12px;
-        color: #eb1414;
     }
 
     .react-activity-calendar .float-right {
