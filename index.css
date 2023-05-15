@@ -391,46 +391,39 @@ h3.user-detail-intro-firstLine span {
 
 }
 
-h3.profession {
+.profession {
+    display: flex;
     font-size: 28px;
-    margin: 15px 0;
-}
-
-h3.profession span {
-    color: var(--profession);
-    text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
-        0px -4px 10px rgba(255, 255, 255, 0.3);
     white-space: nowrap;
     position: relative;
-    z-index: -1;
+    width: 60%;
+    gap: 10px;
 }
 
-h3.profession span::before {
-    content: '';
-    border-left: 2px solid var(--profession);
-    left: 0;
-    top: 0;
-    height: 105%;
-    /* to complete cover the height of the font*/
-    width: 100%;
-    /* to complete cover the width of the font*/
-    position: absolute;
-    background-color: var(--bodyColor);
-    animation: animate 4s steps(12) infinite;
+.typing {
+    display: inline-block;
+    color: var(--profession);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing-text 5s steps(20) 1s infinite;
+    border-right: 2px solid;
 
 }
 
-@keyframes animate {
+@keyframes typing-text {
+    0% {
+        width: 0;
+    }
 
-    30%,
-    60% {
-        left: 100%;
+    50% {
+        width: 85%;
     }
 
     100% {
-        left: 0%;
+        width: 0;
     }
 }
+
 
 #user-detail p {
     margin-bottom: 50px;
@@ -1224,8 +1217,9 @@ section .calendar {
         font-weight: 400;
     }
 
-    h3.profession {
-        font-size: 12px;
+    .profession {
+        font-size: 16px;
+        width: 100%;
         margin: 10px 0;
     }
 
