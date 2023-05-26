@@ -406,7 +406,6 @@ h3.user-detail-intro-firstLine span {
     white-space: nowrap;
     overflow: hidden;
     animation: typing-text 5s steps(20) 1s infinite;
-    border-right: 2px solid;
 
 }
 
@@ -550,13 +549,16 @@ h3.user-detail-intro-firstLine span {
     border-radius: 5px;
 }
 
-
 #about .about-content .about-text h3 {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 15px;
     color: var(--profession);
     height: 25px;
+}
+/* coming from the typed library */
+.typed-cursor{
+    display: none; 
 }
 
 #about .about-content .about-text p {
@@ -781,17 +783,20 @@ td {
 /* --------------------------------------------- */
 .jobrole-img {
     width: 30%;
+    /* position: relative; */
+    /* display: inline-block; */
 }
 
 .jobrole-img img {
     width: 100%;
     border-radius: 5px;
     outline: auto;
+    /* transition: transform 0.8s; */
 }
 
-.jobrole-img:hover {
+.jobrole-img:hover img {
     transform: rotateY(360deg);
-    transition: ease-in-out 4s;
+    transition: ease 4s;
     cursor: pointer;
 }
 
