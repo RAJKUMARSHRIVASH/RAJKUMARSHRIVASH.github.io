@@ -29,7 +29,7 @@ function myFunction(x) {
         sidebar.style.visibility = "visible";
         sidebar.style.animation = "sidebar-load 400ms ease-in";
     } else {
-        sidebar.style.animation = "sidebar-load 400ms ease-out";
+        sidebar.style.animation = "sidebar-unload 400ms ease-out";
         sidebar.style.visibility = "hidden";
 
     }

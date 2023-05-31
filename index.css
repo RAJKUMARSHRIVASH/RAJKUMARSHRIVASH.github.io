@@ -77,8 +77,7 @@ body {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     display: flex;
     align-items: center;
-    justify-content: start;
-    gap: 20vw;
+    justify-content: space-between;
     padding: 10px 20px;
     background-color: var(--bodyColor);
     width: 100%;
@@ -169,16 +168,16 @@ body {
 
 #nav-menu-box {
     display: flex;
-    align-items: center;
-    width: 60%;
-    margin-left: -10%;
+    width: 70%;
 }
 
 #nav-menu-box ul {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    gap: 1.5rem;
     margin: auto;
-    gap: 1%;
     font-weight: bold;
     font-size: large;
 }
@@ -190,7 +189,7 @@ body {
     align-items: center;
     flex-wrap: nowrap;
     gap: 5px;
-    padding: 10px 20px;
+    padding: 0.6rem 0.1rem;
     animation-name: nav-link-load;
     animation-duration: var(--nav-link-load-time);
     animation-timing-function: ease-in;
@@ -224,6 +223,13 @@ a {
     color: unset;
 }
 
+.moon-btn {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #light-dark-icon {
     width: 30px;
     cursor: pointer;
@@ -241,6 +247,14 @@ a {
 }
 
 
+.sidebar-icon {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    top: 12vh;
+    margin-left: 10px;
+}
+
 #sidebar {
     border: 1px solid;
     width: 10vw;
@@ -248,9 +262,10 @@ a {
     background-color: var(--sidebarbgcolor);
     position: fixed;
     border-radius: 10px;
-    top: 15vh;
+    top: 18vh;
     left: 5px;
     visibility: hidden;
+    transition: all 400ms;
 
 }
 
@@ -262,6 +277,18 @@ a {
     100% {
         transform: translateX(0);
 
+    }
+}
+
+@keyframes sidebar-unload {
+
+    0% {
+        transform: translateX(0);
+
+    }
+
+    100% {
+        transform: translateX(-100%);
     }
 }
 
@@ -308,13 +335,6 @@ li a {
     font-size: 100%;
 }
 
-.sidebar-icon {
-    display: inline-block;
-    cursor: pointer;
-    position: fixed;
-    top: 10.5vh;
-    margin-left: 10px;
-}
 
 .bar1,
 .bar2,
@@ -556,9 +576,10 @@ h3.user-detail-intro-firstLine span {
     color: var(--profession);
     height: 25px;
 }
+
 /* coming from the typed library */
-.typed-cursor{
-    display: none; 
+.typed-cursor {
+    display: none;
 }
 
 #about .about-content .about-text p {
@@ -1130,7 +1151,7 @@ section .calendar {
     }
 
     #nav-menu {
-        gap: 72%;
+        justify-content: space-between;
 
     }
 
@@ -1146,8 +1167,22 @@ section .calendar {
         font-size: medium;
     }
 
-    #nav-menu-box ul {
+    #nav-menu-box ul .lis {
         display: none;
+    }
+
+    #nav-menu-box ul #resume-button-1 {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 0.2rem 0.1rem;
+        margin-left: auto;
+
+    }
+
+    .moon-btn {
+        width: 20%;
+        margin-right: 10%;
     }
 
     #sidebar {
@@ -1546,4 +1581,4 @@ section .calendar {
 
 /* Tablet size medium screen size */
 
-@media screen and (min-width:551px) and (max-width:800) {}
+@media screen and (min-width:551px) and (max-width:1100px) {}
