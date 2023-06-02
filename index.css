@@ -246,13 +246,22 @@ a {
 
 }
 
-
 .sidebar-icon {
     display: inline-block;
     cursor: pointer;
     position: fixed;
     top: 12vh;
     margin-left: 10px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: var(--liColor);
+    margin: 6px 0;
+    transition: 0.4s;
 }
 
 #sidebar {
@@ -336,15 +345,6 @@ li a {
 }
 
 
-.bar1,
-.bar2,
-.bar3 {
-    width: 25px;
-    height: 3px;
-    background-color: var(--liColor);
-    margin: 6px 0;
-    transition: 0.4s;
-}
 
 .change .bar1 {
     transform: translate(0, 9px) rotate(-45deg);
@@ -1131,6 +1131,410 @@ section .calendar {
 
 
 /* -----------------Media queries---------------------------- */
+/* Tablet size medium screen size */
+
+@media screen and (min-width:551px) and (max-width:1100px) {
+    ::-webkit-scrollbar {
+        width: 8px;
+        border-radius: 8px;
+    }
+
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    #nav-menu-logo_name {
+        width: 15%;
+    }
+
+    #logo {
+        width: 1.7rem;
+    }
+
+    #user-detail-name {
+        font-size: small;
+    }
+
+    #user-detail-name::before {
+        width: 10px;
+        height: 10px;
+    }
+
+    #user-detail-name::after {
+        width: 10px;
+        height: 10px;
+    }
+
+    #nav-menu-box {
+        width:70%;
+    }
+
+    #nav-menu-box ul {
+        gap: 0.5rem;
+        font-weight: 600;
+        font-size: 8px;
+    }
+
+    #nav-menu-box li {
+        padding: 0.2rem 0.15rem;
+    }
+
+    #nav-menu-box li:hover {
+        border-bottom: 3px solid;
+        border-color: var(--borderBottomColor);
+
+    }
+
+    li img {
+        width: 12px;
+    }
+
+    .moon-btn {
+        width: 20%;
+    }
+
+    #light-dark-icon {
+        width: 25px;
+
+    }
+
+    .sidebar-icon {
+        top: 10vh;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 20px;
+        height: 1.5px;
+    }
+
+    .change .bar1 {
+        transform: translate(0, 7.5px) rotate(-45deg);
+    }
+
+    .change .bar3 {
+        transform: translate(0, -7.5px) rotate(45deg);
+    }
+
+
+    #sidebar {
+        border: 1px solid;
+        width: 100px;
+        padding: 5px;
+        top: 16vh;
+        left: 8px;
+
+    }
+
+    #sidebar-nav-menu-box ul li {
+        font-size: small;
+        padding: 6%;
+        border-bottom: 1.5px solid rgba(220, 213, 213, 0.842);
+
+    }
+
+    .section {
+        padding: 2vh 5vw;
+        width: 100%;
+
+    }
+
+    .midContainer {
+        margin-top: 20vh;
+    }
+
+    .row {
+        gap: 20px;
+
+    }
+
+    .mid-body #user-detail {
+        flex: 0 0 55%;
+    }
+
+    h3.user-detail-intro-firstLine {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    h3.user-detail-intro-firstLine span {
+        font-size: 25px;
+        font-weight: 600;
+
+    }
+
+    .profession {
+        font-size: 18px;
+        width: 80%;
+    }
+
+    #user-detail p {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    .mid-body .avtar {
+        flex: 0 0 20%;
+        margin-top: 5%;
+
+    }
+
+    .avtar img {
+        width: 150px;
+        border-radius: 5px;
+
+    }
+
+    .avtar::before {
+        width: 40px;
+        height: 40px;
+        border-left: 5px solid;
+        border-top: 5px solid;
+        top: -30px;
+        left: -20px;
+    }
+
+    .avtar::after {
+        width: 40px;
+        height: 40px;
+        border-right: 5px solid;
+        border-bottom: 5px solid;
+        bottom: -30px;
+        right: -20px;
+    }
+
+    .btn-resume {
+        font-size: 12px;
+        padding: 5px 10px;
+        border-radius: 6px;
+    }
+
+    /*----------------- About section-----------  */
+    .section-title h2 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .section-title h2::before {
+        width: 50px;
+        border-bottom: 3px solid;
+        bottom: -2px;
+    }
+
+    .section-title h2::after {
+        width: 25px;
+        border-bottom: 3px solid;
+        bottom: -10px;
+    }
+
+    #about .about-content {
+        max-width: 65%;
+    }
+
+    #about .about-content .about-text h3 {
+        font-size: 20px;
+    }
+
+    #about .about-content .about-text {
+        flex: 0 0 70%;
+        max-width: 80%;
+    }
+
+    #about .about-content .about-text p {
+        font-size: 15px;
+    }
+
+    #about .about-content img {
+        flex: 0 0 20%;
+        max-width: 200px;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    .personal-info {
+        margin-right: 5px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        width: 100%;
+    }
+
+    .personal-info h3 {
+        color: orangered;
+        margin-bottom: 5px;
+        font-size: medium;
+    }
+
+    .personal-info .info-item p {
+        font-weight: 500;
+        padding-top: 5px;
+        font-size: 15px;
+    }
+
+    .personal-info .info-item-education {
+        font-weight: 500;
+        padding-bottom: 6px;
+        width: 100%;
+    }
+
+    /*----------------- skills -----------  */
+
+    /* hexagonal area */
+    .cntnr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        margin-right: 15%;
+    }
+
+    .cntnr .hexagonArea img {
+        width: 50px;
+        border-radius: 30px;
+    }
+
+    .cntnr .hexagonArea .hexagon {
+        width: 60px;
+        height: 80px;
+        margin: 6px 3px;
+
+    }
+    .Figma{
+        font-size: 10px;
+    }
+
+    .cntnr .hexagonArea .hexagon:hover {
+        background-color: aquamarine;
+        transform: scale(0.90);
+    }
+
+    #backToTop>img {
+        width: 50px;
+
+    }
+
+    .jobrole-img {
+        width: 20%;
+        margin-left: -15%;
+    }
+
+    .jobrole-box {
+        width: 70%;
+        padding: 0 3%;
+        gap: 20px;
+    }
+
+    .jobrole-box .job {
+        margin: 2% 3%;
+
+    }
+
+    .jobrole-box::before {
+        left: 0;
+
+    }
+
+    .jobrole-box .job h2 {
+        font-size: 20px;
+    }
+
+    .jobrole-box .job .duration .circle-dot {
+        height: 15px;
+        width: 15px;
+        left: -7px;
+        border-radius: 50%;
+
+    }
+
+
+    .jobrole-box .job .job-description {
+        font-size: 15px;
+    }
+
+    .jobrole-box .job .duration img {
+        width: 22px;
+    }
+
+    .projects .project-grid {
+        gap: 20px;
+        width: 80%;
+    }
+
+    .project-card h3 {
+        margin: 15px;
+        font-size: 18px;
+
+    }
+
+    .project-card .project-description {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .project-card .project-tech-stack {
+        font-size: 15px;
+        font-weight: 400;
+
+    }
+
+    .project-card div button {
+        border-radius: 15px;
+        padding: 3px 8px;
+        font-size: small;
+    }
+
+    /* ------------------Github stats--------------------- */
+    .github {
+        width: 90%;
+    }
+
+    .sub-title {
+        text-align: center;
+        font-size: medium;
+    }
+
+    /* --------------- Github Calender ----------------- */
+    .react-activity-calendar .contrib-number {
+        font-size: 15px;
+    }
+
+    .contact-box {
+        width: 90%;
+    }
+
+    .contact-links {
+        width: 40%;
+        gap: 20px;
+    }
+
+    .contact-links img {
+        width: 20px;
+    }
+
+    .contact-links>div {
+        font-size: medium;
+    }
+
+    #copyBTN {
+        width: 15px;
+    }
+
+    .cartoon img {
+        top: -50px;
+
+    }
+
+    #footer {
+        padding: 8px;
+    }
+
+
+}
 
 /* Mobile size */
 @media screen and (min-width:0px) and (max-width:550px) {
@@ -1578,7 +1982,3 @@ section .calendar {
         font-size: small;
     }
 }
-
-/* Tablet size medium screen size */
-
-@media screen and (min-width:551px) and (max-width:1100px) {}
