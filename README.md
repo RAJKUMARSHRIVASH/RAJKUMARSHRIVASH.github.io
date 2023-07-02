@@ -9,7 +9,8 @@ This is my Portfolio Website 👍❤️ only frontend based.
 ## External Libraries 👎
 - Google Fonts
 - Typed.js module
-- Github stats calender
+- GitHub stats calendar
+- scroll reveal
 
 ## Demo 👎 Github pages
 ```http
