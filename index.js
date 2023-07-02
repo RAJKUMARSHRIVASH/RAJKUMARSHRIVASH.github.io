@@ -111,7 +111,7 @@ const srTop = ScrollReveal({
     duration: 2000,
     reset: true
 })
-srTop.reveal(".top",{delay:200})
+srTop.reveal(".top",{delay:100})
 
 const srBottom = ScrollReveal({
     origin: 'bottom',
@@ -119,7 +119,7 @@ const srBottom = ScrollReveal({
     duration: 2000,
     reset: true
 })
-srBottom.reveal(".bottom",{delay:200})
+srBottom.reveal(".bottom",{delay:100})
 
 
 const srLeft = ScrollReveal({
@@ -129,7 +129,7 @@ const srLeft = ScrollReveal({
     reset: true
 })
 
-srLeft.reveal(".left", { delay: 200 })
+srLeft.reveal(".left", { delay: 100 })
 
 const srRight = ScrollReveal({
     origin: 'right',
@@ -137,4 +137,4 @@ const srRight = ScrollReveal({
     duration: 2000,
     reset: true
 })
-srRight.reveal(".right", { delay: 200 })
+srRight.reveal(".right", { delay: 100 })
