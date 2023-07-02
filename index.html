@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./index.css">
     <!-- auto type animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-
+    <!-- scroll animation -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="icon" type="image/x-icon" href="./logoAndImgaes/Portfolio_logo.png" />
 </head>
 
@@ -69,7 +70,7 @@
         <section class="mid-body section" id="home">
             <div class="midContainer leftPadd">
                 <div class="row">
-                    <div id="user-detail">
+                    <div id="user-detail" class="top">
                         <h3 class="user-detail-intro-firstLine">Hi, my name is <span class="name">Raj Kumar Sen</span>
                         </h3>
                         <h3 class="profession">I am a <span class="typing"> Full Stack Web Developer</span></h3>
@@ -80,11 +81,11 @@
                             chatting apps as well.
                         </p>
                     </div>
-                    <div class="avtar">
+                    <div class="avtar right">
                         <img src="./logoAndImgaes/avtar6.png" alt="Avtar" class="home-img" id="profileImage">
                     </div>
                 </div>
-                <div class="btns">
+                <div class="btns bottom">
                     <button class="btn-resume" id="resume-button-2"><a target="_blank" id="resume-link-2" download
                             href="./logoAndImgaes/Raj_Sen_Resume.pdf" onclick="downloadResume()">Download
                             Resume</a></button>
@@ -95,14 +96,14 @@
         <section class="about section" id="about">
             <div class="leftPadd">
                 <div class="row">
-                    <div class="section-title">
+                    <div class="section-title top">
                         <h2>About Me</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="about-content">
                         <div class="row">
-                            <div class="about-text">
+                            <div class="about-text top">
                                 <h3 class="typing2"></h3>
                                 <p id="user-detail-intro">A self-disciplined, self-motivated and enthusiastic
                                     Web-Developer, always tries to give best with a positive attitude and optimal
@@ -113,10 +114,10 @@
                                     highly growing environment to learn & get organizational goals.
                                 </p>
                             </div>
-                            <img src="./logoAndImgaes/programming.png" alt="">
+                            <img class="right" src="./logoAndImgaes/programming.png" alt="">
                         </div>
                         <div class="row flex">
-                            <div class="personal-info">
+                            <div class="personal-info left">
                                 <h3>PERSONAL PROFILE</h3>
                                 <div class="rows">
                                     <div class="info-item">
@@ -133,7 +134,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="personal-info interests">
+                            <div class="personal-info interests bottom">
                                 <h3>INTERESTS</h3>
                                 <div class="rows">
                                     <div class="info-item">
@@ -150,7 +151,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="personal-info education">
+                            <div class="personal-info education right">
                                 <h3>EDUCATION</h3>
                                 <div class="rows">
                                     <div class="info-item-education">
@@ -169,9 +170,9 @@
                             </div>
                         </div>
                         <div class="btns">
-                            <button class="btn-resume" onclick="downloadResumeCV()"><a target="_blank">Download
+                            <button class="btn-resume left" onclick="downloadResumeCV()"><a target="_blank">Download
                                     CV</a></button>
-                            <button class="btn-resume send-mail"><a href="mailto: rajkumarshrivash374@gmail.com">
+                            <button class="btn-resume send-mail right"><a href="mailto: rajkumarshrivash374@gmail.com">
                                     Hire Me</a></button>
                         </div>
                     </div>
@@ -187,7 +188,7 @@
                     </div>
                 </div>
                 <div class="cntnr">
-                    <div class="hexagonArea first skills-card">
+                    <div class="hexagonArea first skills-card top">
                         <div class="hexagon HTML skills-card-name skills-card-name">
                             <img src="./logoAndImgaes/html.png" alt="" class="skills-card-img">
                         </div>
@@ -210,7 +211,7 @@
                             <img src="./logoAndImgaes/express.png" alt="" class="skills-card-img">
                         </div>
                     </div>
-                    <div class="hexagonArea middle skills-card">
+                    <div class="hexagonArea middle skills-card left">
                         <div class="hexagon React skills-card-name">
                             <img src="./logoAndImgaes/react-js-logo.png" alt="" class="skills-card-img">
                         </div>
@@ -231,7 +232,7 @@
                             <img src="./logoAndImgaes/Solidworks-logo.jpg" alt="" class="skills-card-img">
                         </div>
                     </div>
-                    <div class="hexagonArea last skills-card">
+                    <div class="hexagonArea last skills-card bottom">
                         <div class="hexagon SQL skills-card-name">
                             <img src="./logoAndImgaes/sql.jpg" alt="" class="skills-card-img">
                         </div>
@@ -351,7 +352,7 @@
         <section class="experience section">
             <div class="leftPadd">
                 <div class="row">
-                    <div class="section-title">
+                    <div class="section-title top">
                         <h2>Experience</h2>
                     </div>
                 </div>
@@ -373,7 +374,7 @@
                             <td>Aug 2019 - Feb 2020</td>
                         </tr>
                     </table> -->
-                    <div class="jobrole-box">
+                    <div class="jobrole-box left">
                         <div class="job">
                             <div class="duration">
                                 <div class="circle-dot"></div>
@@ -395,7 +396,7 @@
                             <p class="job-description">Worked for 7th Economic Census 2019</p>
                         </div>
                     </div>
-                    <div class="jobrole-img">
+                    <div class="jobrole-img right">
                         <img src="./logoAndImgaes/avtar7.jpg" alt="image">
                     </div>
                 </div>
@@ -412,7 +413,7 @@
                 <div class="project-grid">
 
                     <!-- Project 1 -->
-                    <div class="project-card pc1">
+                    <div class="project-card pc1 left">
                         <img src="./logoAndImgaes/findmydoc.png" alt="project screenshot" class="projects-image">
                         <h3 class="project-title">Find My Doctor</h3>
                         <p class="project-description">This project is a Hospital appointment booking system website
@@ -431,7 +432,7 @@
                     </div>
 
                     <!-- Project 2 -->
-                    <div class="project-card pc2">
+                    <div class="project-card pc2 right">
                         <img src="./logoAndImgaes/DreamHouse-ss.png" alt="project screenshot" class="projects-image">
                         <h3 class="project-title">Dream House</h3>
                         <p class="project-description">This is basically an E-commerce website for all the furniture and
@@ -451,7 +452,7 @@
                     </div>
 
                     <!-- Project 3 -->
-                    <div class="project-card pc3">
+                    <div class="project-card pc3 left">
                         <img src="./logoAndImgaes/beautify.jpg" alt="project screenshot" class="projects-image">
                         <h3 class="project-title">Beautify</h3>
                         <p class="project-description">This is an E-commerce Website for beauty wellness, cosmetics and
@@ -485,7 +486,7 @@
                         </div>
                     </div> -->
                     <!-- Project 5 -->
-                    <div class="project-card pc4">
+                    <div class="project-card pc4 right">
                         <img src="./logoAndImgaes/LifecarePoster.jpg" alt="project screenshot" class="projects-image">
                         <h3 class="project-title">Life Care</h3>
                         <p class="project-description">This project is a Hospital appointment booking system website
@@ -504,7 +505,7 @@
                     </div>
 
                     <!-- Project 6 -->
-                    <div class="project-card pc3">
+                    <div class="project-card pc3 left">
                         <img src="./logoAndImgaes/devquery-ss.jpg" alt="project screenshot" class="projects-image">
                         <h3 class="project-title">DevQuery</h3>
                         <p class="project-description">Website for the Developers to ask, problems, Post questions, give
@@ -523,7 +524,7 @@
                     </div>
 
                     <!-- Project 7 -->
-                    <div class="project-card pc4">
+                    <div class="project-card pc4 right">
                         <img src="./logoAndImgaes/codeConverter.png" alt="project screenshot" class="projects-image">
                         <h3 class="project-title">Code Converter</h3>
                         <p class="project-description">This is an AI code converter app using that anyone can convert
@@ -544,7 +545,7 @@
                     </div>
 
                     <!-- Project 8 -->
-                    <div class="project-card pc3">
+                    <div class="project-card pc3 left">
                         <img src="./logoAndImgaes/shayari.png" alt="project screenshot" class="projects-image">
                         <h3 class="project-title">AI Shayari Generator</h3>
                         <p class="project-description">This App is integrated into the ChatGPT and is an AI Shayari generator, where user can write their keyword and get a ready-made Shayari generated.

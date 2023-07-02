@@ -104,3 +104,37 @@ function copyToClipboard() {
 }
 
 // ***************************************************************************************************************
+// scroll animation
+const srTop = ScrollReveal({
+    origin: 'top',
+    distance: '120px',
+    duration: 2000,
+    reset: true
+})
+srTop.reveal(".top",{delay:200})
+
+const srBottom = ScrollReveal({
+    origin: 'bottom',
+    distance: '120px',
+    duration: 2000,
+    reset: true
+})
+srBottom.reveal(".bottom",{delay:200})
+
+
+const srLeft = ScrollReveal({
+    origin: 'left',
+    distance: '120px',
+    duration: 2000,
+    reset: true
+})
+
+srLeft.reveal(".left", { delay: 200 })
+
+const srRight = ScrollReveal({
+    origin: 'right',
+    distance: '120px',
+    duration: 2000,
+    reset: true
+})
+srRight.reveal(".right", { delay: 200 })
