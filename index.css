@@ -26,7 +26,29 @@ html {
 }
 
 :root {
-    --bodyColor: rgb(7, 14, 47);
+
+    /* --bodyColor: rgb(220, 249, 253); */
+    --bodyColor: linear-gradient(to right, rgb(35, 218, 242), rgb(238, 151, 105));
+    --firstColor: black;
+    --nameColor: rgb(4, 95, 65);
+    --liColor: rgb(3, 77, 53);
+    --borderBottomColor: rgb(3, 77, 53);
+    /* --sidebarbgcolor : rgb(204, 248, 218); */
+    /* --sidebarbgcolor : rgb(207, 239, 255); */
+    --sidebarbgcolor: rgba(78, 195, 195, 0.666);
+    --sidebarHoverbg: rgb(203, 239, 239);
+    --midbodypara: rgb(4, 4, 72);
+    --profession: rgb(241, 32, 206);
+    --resumeBtnHover: rgb(255, 62, 223);
+    /*------------changeable 👆---------------  */
+    --midBodyName: rgb(255, 21, 0);
+
+}
+
+.dark-mode {
+
+    /* --bodyColor: rgb(7, 14, 47); */
+    --bodyColor: linear-gradient(to right, #5b0c2c, #071952);
     --firstColor: aliceblue;
     /* --nameColor:rgb(9, 149, 165); */
     --nameColor: rgb(50, 205, 223);
@@ -39,29 +61,12 @@ html {
     --midbodypara: rgb(205, 205, 250);
     --profession: rgb(32, 241, 137);
     --resumeBtnHover: rgb(9, 215, 112);
-    --midBodyName: rgb(255, 21, 0);
-
-}
-
-.dark-mode {
-
-    --bodyColor: rgb(220, 249, 253);
-    --firstColor: black;
-    --nameColor: rgb(4, 95, 65);
-    --liColor: rgb(3, 77, 53);
-    --borderBottomColor: rgb(3, 77, 53);
-    /* --sidebarbgcolor : rgb(204, 248, 218); */
-    /* --sidebarbgcolor : rgb(207, 239, 255); */
-    --sidebarbgcolor: rgba(120, 243, 243, 0.666);
-    --sidebarHoverbg: rgb(203, 239, 239);
-    --midbodypara: rgb(4, 4, 72);
-    --profession: rgb(241, 32, 206);
-    --resumeBtnHover: rgb(255, 62, 223);
 
 }
 
 body {
-    background-color: var(--bodyColor);
+    /* background-color: var(--bodyColor); */
+    background: var(--bodyColor);
     color: var(--firstColor);
     font-family: 'M PLUS Rounded 1c', sans-serif;
     margin: auto;
@@ -75,12 +80,16 @@ body {
 }
 
 #nav-menu {
+    /* opacity: 1; */
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: var(--bodyColor);
+    /* background-color: var(--bodyColor); */
+    /* background-color:#071952; */
+    background: var(--bodyColor);
+    /* To fix the transparency problem of navbar background I am using background in-place of background-color*/
     width: 100%;
     position: fixed;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
@@ -402,7 +411,8 @@ h3.user-detail-intro-firstLine {
 }
 
 h3.user-detail-intro-firstLine span {
-    color: var(--midBodyName);
+    /* color: var(--midBodyName); */
+    color: #068FFF;
     font-family: 'Kaushan Script', cursive;
     font-size: 30px;
     font-weight: 700;
@@ -502,7 +512,8 @@ h3.user-detail-intro-firstLine span {
     font-weight: 500;
     padding: 8px 13px;
     background-color: var(--profession);
-    color: var(--bodyColor);
+    /* color: var(--bodyColor); */
+    color: white;
     border: none;
     border-radius: 10px;
     display: inline-block;
@@ -1168,7 +1179,7 @@ section .calendar {
     }
 
     #nav-menu-box {
-        width:70%;
+        width: 70%;
     }
 
     #nav-menu-box ul {
@@ -1405,7 +1416,8 @@ section .calendar {
         margin: 6px 3px;
 
     }
-    .Figma{
+
+    .Figma {
         font-size: 10px;
     }
 
